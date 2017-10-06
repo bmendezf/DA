@@ -51,7 +51,7 @@ namespace ERP.Entities.Student.Tests
             Student student = new Student();
             student.CI = 12345678;
 
-            Assert.Equals(student.CI, 12345678);
+            Assert.AreEqual(student.CI, 12345678);
         }
 
     }

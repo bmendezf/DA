@@ -10,6 +10,7 @@ namespace ERP.Entities.Student
     {
         public string Name { get; set; }
         public string LastName { get; set; }
+        public int CI { get; set; }
 
         public Student()
         {
