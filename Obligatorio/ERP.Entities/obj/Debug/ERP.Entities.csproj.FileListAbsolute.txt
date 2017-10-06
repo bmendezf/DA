@@ -1,0 +1,5 @@
+c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Entities\bin\Debug\ERP.Entities.exe.config
+c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Entities\bin\Debug\ERP.Entities.exe
+c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Entities\bin\Debug\ERP.Entities.pdb
+c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Entities\obj\Debug\ERP.Entities.exe
+c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Entities\obj\Debug\ERP.Entities.pdb

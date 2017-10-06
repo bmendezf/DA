@@ -1,0 +1,7 @@
+c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Test\bin\Debug\ERP.Test.dll
+c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Test\bin\Debug\ERP.Test.pdb
+c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Test\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Test\obj\Debug\ERP.Test.csprojResolveAssemblyReference.cache
+c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Test\obj\Debug\ERP.Test.dll
+c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Test\obj\Debug\ERP.Test.pdb
