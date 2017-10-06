@@ -21,6 +21,7 @@ namespace ERP.Entities.Student
             LastName = "";
             CI = 0;
             StudentNumber = 0;
+            Subjects = new List<Subject.Subject>();
         }
     }
 
