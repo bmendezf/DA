@@ -14,6 +14,7 @@ namespace ERP.Entities.Student
         public Student()
         {
             Name = "";
+            LastName = "";
         }
     }
 
