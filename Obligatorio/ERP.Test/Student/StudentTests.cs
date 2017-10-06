@@ -85,5 +85,11 @@ namespace ERP.Entities.Student.Tests
 
             Assert.AreEqual(student.Subjects, someSubjects);
         }
+
+        [TestMethod()]
+        public void SubjectsNotNullTest()
+        {
+            Assert.IsNotNull(student.Subjects);
+        }
     }
 }
