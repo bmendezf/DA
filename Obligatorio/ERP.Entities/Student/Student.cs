@@ -8,5 +8,6 @@ namespace ERP.Entities.Student
 {
     public class Student
     {
+        public string Name { get; set; }
     }
 }
