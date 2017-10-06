@@ -54,7 +54,13 @@ namespace ERP.Entities.Student.Tests
             Assert.AreEqual(student.CI, 12345678);
         }
 
+        [TestMethod()]
+        public void CINotNullTest()
+        {
+            Student student = new Student();
+
+            Assert.IsNotNull(student.CI);
+        }
+
     }
-
-
 }
