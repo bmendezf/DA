@@ -10,11 +10,13 @@ namespace ERP.Entities.Van
     {
         public bool Availability { get; set; }
         public int Capacity { get; set; }
+        public string LicensePlate { get; set; }
 
         public Van()
         {
             Availability = true;
             Capacity = 0;
+            LicensePlate = "";
         }
     }
 }

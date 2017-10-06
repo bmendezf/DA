@@ -48,5 +48,19 @@ namespace ERP.Entities.Van.Tests
             Assert.IsNotNull(van.Capacity);
         }
 
+        [TestMethod()]
+        public void LicensePlateTest()
+        {
+            van.LicensePlate = "abc1234";
+
+            Assert.AreEqual(van.LicensePlate, "abc1234");
+        }
+
+        [TestMethod()]
+        public void LicensePlateNotNullTest()
+        {
+            Assert.IsNotNull(van.LicensePlate);
+        }
+
     }
 }
