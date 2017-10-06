@@ -34,5 +34,19 @@ namespace ERP.Entities.Van.Tests
             Assert.IsNotNull(van.Availability);
         }
 
+        [TestMethod()]
+        public void CapacityTest()
+        {
+            van.Capacity = 12;
+
+            Assert.AreEqual(van.Capacity, 12);
+        }
+
+        [TestMethod()]
+        public void CapacityNotNullTest()
+        {
+            Assert.IsNotNull(van.Capacity);
+        }
+
     }
 }
