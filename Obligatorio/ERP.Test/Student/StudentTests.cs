@@ -27,6 +27,16 @@ namespace ERP.Entities.Student.Tests
 
             Assert.IsNotNull(student.Name);
         }
+
+        [TestMethod()]
+        public void LastNameTest()
+        {
+            Student student = new Student();
+            student.LastName = "Alonso";
+
+            Assert.AreEqual(student.LastName, "Alonso");
+        }
+
     }
 
 
