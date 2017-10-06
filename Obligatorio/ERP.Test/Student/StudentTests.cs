@@ -80,7 +80,7 @@ namespace ERP.Entities.Student.Tests
         public void SubjectsTest()
         {
             List<Subject.Subject> someSubjects;
-            someSubjects = new List<Subject.Subject>;
+            someSubjects = new List<Subject.Subject>();
             student.Subjects = someSubjects;
 
             Assert.AreEqual(student.Subjects, someSubjects);

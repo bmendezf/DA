@@ -13,7 +13,8 @@ namespace ERP.Entities.Student
         public string LastName { get; set; }
         public int CI { get; set; }
         public int StudentNumber { get; set; }
-        
+        public List<Subject.Subject> Subjects { get; set; }
+
         public Student()
         {
             Name = "";
