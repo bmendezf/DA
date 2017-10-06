@@ -16,6 +16,7 @@ namespace ERP.Entities.Student
         {
             Name = "";
             LastName = "";
+            CI = 0;
         }
     }
 
