@@ -11,10 +11,56 @@ namespace ERP.Entities.Van.Tests
     [TestClass()]
     public class VanTests
     {
-        [TestMethod()]
-        public void mTest()
+
+        Van van;
+
+        [TestInitialize()]
+        public void initialize()
         {
-            Assert.Fail();
+            van = new Van();
         }
+
+        [TestMethod()]
+        public void AvailabilityTest()
+        {
+            van.Availability = true;
+
+            Assert.AreEqual(van.Availability, true);
+        }
+
+        [TestMethod()]
+        public void AvailabilityNotNullTest()
+        {
+            Assert.IsNotNull(van.Availability);
+        }
+
+        [TestMethod()]
+        public void CapacityTest()
+        {
+            van.Capacity = 12;
+
+            Assert.AreEqual(van.Capacity, 12);
+        }
+
+        [TestMethod()]
+        public void CapacityNotNullTest()
+        {
+            Assert.IsNotNull(van.Capacity);
+        }
+
+        [TestMethod()]
+        public void LicensePlateTest()
+        {
+            van.LicensePlate = "abc1234";
+
+            Assert.AreEqual(van.LicensePlate, "abc1234");
+        }
+
+        [TestMethod()]
+        public void LicensePlateNotNullTest()
+        {
+            Assert.IsNotNull(van.LicensePlate);
+        }
+
     }
 }
