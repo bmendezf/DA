@@ -11,10 +11,21 @@ namespace ERP.Entities.Van.Tests
     [TestClass()]
     public class VanTests
     {
-        [TestMethod()]
-        public void mTest()
+
+        Van van;
+
+        [TestInitialize()]
+        public void initialize()
         {
-            Assert.Fail();
+            van = new Van();
+        }
+
+        [TestMethod()]
+        public void AvailabilityTest()
+        {
+            van.Availability = true;
+
+            Assert.AreEqual(van.Availability, true);
         }
     }
 }
