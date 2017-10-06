@@ -17,7 +17,15 @@ namespace ERP.Entities.Student.Tests
             Student student = new Student();
             student.Name = "Juan";
 
-            Assert.Equals(student.Name, "Juan");
+            Assert.AreEqual(student.Name, "Juan");
+        }
+
+        [TestMethod()]
+        public void NameNotNullTest()
+        {
+            Student student = new Student();
+
+            Assert.IsNotNull(student.Name);
         }
     }
 

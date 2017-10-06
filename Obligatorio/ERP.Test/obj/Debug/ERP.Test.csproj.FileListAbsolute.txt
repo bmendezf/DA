@@ -8,3 +8,9 @@ c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.T
 C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Test\obj\Debug\ERP.Test.csprojResolveAssemblyReference.cache
 C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Test\obj\Debug\ERP.Test.dll
 C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Test\obj\Debug\ERP.Test.pdb
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Test\bin\Debug\ERP.Test.dll
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Test\bin\Debug\ERP.Test.pdb
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Test\bin\Debug\ERP.Entities.exe
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Test\bin\Debug\ERP.Entities.pdb
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Test\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
