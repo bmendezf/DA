@@ -8,7 +8,6 @@ namespace ERP.Entities.Van
 {
     public class Van
     {
-        public void m() { }
-
+        public bool Availability { get; set; }
     }
 }
