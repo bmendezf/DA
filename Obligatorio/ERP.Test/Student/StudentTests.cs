@@ -11,6 +11,14 @@ namespace ERP.Entities.Student.Tests
     [TestClass()]
     public class StudentTests
     {
+        [TestMethod()]
+        public void NameTest()
+        {
+            Student student = new Student();
+            student.Name = "Juan";
+
+            Assert.Equals(student.Name, "Juan");
+        }
     }
 
 
