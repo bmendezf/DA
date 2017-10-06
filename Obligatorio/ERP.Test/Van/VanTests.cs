@@ -27,5 +27,12 @@ namespace ERP.Entities.Van.Tests
 
             Assert.AreEqual(van.Availability, true);
         }
+
+        [TestMethod()]
+        public void AvailabilityNotNullTest()
+        {
+            Assert.IsNotNull(van.Availability);
+        }
+
     }
 }
