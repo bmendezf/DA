@@ -1,0 +1,5 @@
+c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Data\bin\Debug\ERP.Data.exe.config
+c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Data\bin\Debug\ERP.Data.exe
+c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Data\bin\Debug\ERP.Data.pdb
+c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Data\obj\Debug\ERP.Data.exe
+c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Data\obj\Debug\ERP.Data.pdb

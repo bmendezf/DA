@@ -1,0 +1,5 @@
+c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Logic\bin\Debug\ERP.Logic.exe.config
+c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Logic\bin\Debug\ERP.Logic.exe
+c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Logic\bin\Debug\ERP.Logic.pdb
+c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Logic\obj\Debug\ERP.Logic.exe
+c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Logic\obj\Debug\ERP.Logic.pdb
