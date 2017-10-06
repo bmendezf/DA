@@ -11,27 +11,32 @@ namespace ERP.Entities.Student.Tests
     [TestClass()]
     public class StudentTests
     {
+        Student student;
+
+        [TestInitialize()]
+        public void initialize()
+        {
+            student = new Student();
+        }
+
         [TestMethod()]
         public void NameTest()
-        {
-            Student student = new Student();
+        {            
             student.Name = "Juan";
 
             Assert.AreEqual(student.Name, "Juan");
         }
 
+
         [TestMethod()]
         public void NameNotNullTest()
         {
-            Student student = new Student();
-
             Assert.IsNotNull(student.Name);
         }
 
         [TestMethod()]
         public void LastNameTest()
         {
-            Student student = new Student();
             student.LastName = "Alonso";
 
             Assert.AreEqual(student.LastName, "Alonso");
@@ -40,15 +45,12 @@ namespace ERP.Entities.Student.Tests
         [TestMethod()]
         public void LastNameNotNullTest()
         {
-            Student student = new Student();
-
             Assert.IsNotNull(student.LastName);
         }
 
         [TestMethod()]
         public void CITest()
         {
-            Student student = new Student();
             student.CI = 12345678;
 
             Assert.AreEqual(student.CI, 12345678);
@@ -57,18 +59,21 @@ namespace ERP.Entities.Student.Tests
         [TestMethod()]
         public void CINotNullTest()
         {
-            Student student = new Student();
-
             Assert.IsNotNull(student.CI);
         }
 
         [TestMethod()]
         public void StudentNumberTest()
         {
-            Student student = new Student();
             student.StudentNumber = 123456;
 
             Assert.AreEqual(student.StudentNumber, 123456);
+        }
+
+        [TestMethod()]
+        public void StudentNumberNotNullTest()
+        {
+            Assert.IsNotNull(student.StudentNumber);
         }
     }
 }

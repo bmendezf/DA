@@ -18,6 +18,7 @@ namespace ERP.Entities.Student
             Name = "";
             LastName = "";
             CI = 0;
+            StudentNumber = 0;
         }
     }
 
