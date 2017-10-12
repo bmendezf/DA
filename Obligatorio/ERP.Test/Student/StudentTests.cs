@@ -76,20 +76,5 @@ namespace ERP.Entities.Student.Tests
             Assert.IsNotNull(student.StudentNumber);
         }
 
-        [TestMethod()]
-        public void SubjectsTest()
-        {
-            List<Subject.Subject> someSubjects;
-            someSubjects = new List<Subject.Subject>();
-            student.Subjects = someSubjects;
-
-            Assert.AreEqual(student.Subjects, someSubjects);
-        }
-
-        [TestMethod()]
-        public void SubjectsNotNullTest()
-        {
-            Assert.IsNotNull(student.Subjects);
-        }
     }
 }
