@@ -21,20 +21,6 @@ namespace ERP.Entities.Van.Tests
         }
 
         [TestMethod()]
-        public void AvailabilityTest()
-        {
-            van.Availability = true;
-
-            Assert.AreEqual(van.Availability, true);
-        }
-
-        [TestMethod()]
-        public void AvailabilityNotNullTest()
-        {
-            Assert.IsNotNull(van.Availability);
-        }
-
-        [TestMethod()]
         public void CapacityTest()
         {
             van.Capacity = 12;
