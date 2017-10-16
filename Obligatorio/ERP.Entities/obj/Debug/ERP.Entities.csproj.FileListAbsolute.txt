@@ -9,3 +9,8 @@ C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Entities\bin\Debug\ERP.Ent
 C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Entities\obj\Debug\ERP.Entities.csprojResolveAssemblyReference.cache
 C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Entities\obj\Debug\ERP.Entities.exe
 C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Entities\obj\Debug\ERP.Entities.pdb
+D:\st\da\Obligatorio\ERP.Entities\bin\Debug\ERP.Entities.dll.config
+D:\st\da\Obligatorio\ERP.Entities\bin\Debug\ERP.Entities.dll
+D:\st\da\Obligatorio\ERP.Entities\bin\Debug\ERP.Entities.pdb
+D:\st\da\Obligatorio\ERP.Entities\obj\Debug\ERP.Entities.dll
+D:\st\da\Obligatorio\ERP.Entities\obj\Debug\ERP.Entities.pdb

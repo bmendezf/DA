@@ -1,2 +1,10 @@
 c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.UI\bin\Debug\ERP.UI.exe.config
 C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.UI\bin\Debug\ERP.UI.exe.config
+D:\st\da\Obligatorio\ERP.UI\bin\Debug\ERP.UI.exe.config
+D:\st\da\Obligatorio\ERP.UI\bin\Debug\ERP.UI.exe
+D:\st\da\Obligatorio\ERP.UI\bin\Debug\ERP.UI.pdb
+D:\st\da\Obligatorio\ERP.UI\obj\Debug\ERP.UI.Form1.resources
+D:\st\da\Obligatorio\ERP.UI\obj\Debug\ERP.UI.Properties.Resources.resources
+D:\st\da\Obligatorio\ERP.UI\obj\Debug\ERP.UI.csproj.GenerateResource.Cache
+D:\st\da\Obligatorio\ERP.UI\obj\Debug\ERP.UI.exe
+D:\st\da\Obligatorio\ERP.UI\obj\Debug\ERP.UI.pdb

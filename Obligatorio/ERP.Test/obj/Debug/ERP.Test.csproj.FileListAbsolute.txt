@@ -12,3 +12,14 @@ C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Test\bin\Debug\ERP.Test.dl
 C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Test\bin\Debug\ERP.Test.pdb
 C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Test\bin\Debug\ERP.Entities.exe
 C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Test\bin\Debug\ERP.Entities.pdb
+D:\st\da\Obligatorio\ERP.Test\bin\Debug\ERP.Test.dll
+D:\st\da\Obligatorio\ERP.Test\bin\Debug\ERP.Test.pdb
+D:\st\da\Obligatorio\ERP.Test\bin\Debug\ERP.Entities.dll
+D:\st\da\Obligatorio\ERP.Test\bin\Debug\ERP.Logic.dll
+D:\st\da\Obligatorio\ERP.Test\bin\Debug\ERP.Data.dll
+D:\st\da\Obligatorio\ERP.Test\bin\Debug\ERP.Entities.pdb
+D:\st\da\Obligatorio\ERP.Test\bin\Debug\ERP.Logic.pdb
+D:\st\da\Obligatorio\ERP.Test\bin\Debug\ERP.Data.pdb
+D:\st\da\Obligatorio\ERP.Test\obj\Debug\ERP.Test.csprojResolveAssemblyReference.cache
+D:\st\da\Obligatorio\ERP.Test\obj\Debug\ERP.Test.dll
+D:\st\da\Obligatorio\ERP.Test\obj\Debug\ERP.Test.pdb

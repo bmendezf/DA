@@ -37,6 +37,17 @@ namespace ERP.Entities.Student
             Coordenada = new coordenada(0, 0);
             nextStudentNumber++;
         }
+
+        public override bool Equals(object obj)
+        {
+            Student aStudent = obj as Student;
+
+            if (aStudent == null)
+            {
+                return false;
+            }
+            return this.StudentNumber== aStudent.StudentNumber;
+        }
     }
 
 }

@@ -70,6 +70,10 @@
       <Project>{AC66EB9C-4FCA-4078-88E7-1CE372F0840B}</Project>
       <Name>ERP.Entities</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ERP.Logic\ERP.Logic.csproj">
+      <Project>{0dc495e0-0c65-478a-85cc-63b79777c816}</Project>
+      <Name>ERP.Logic</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

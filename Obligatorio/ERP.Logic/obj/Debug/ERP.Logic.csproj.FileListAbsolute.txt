@@ -1,5 +1,9 @@
-c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Logic\bin\Debug\ERP.Logic.exe.config
-c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Logic\bin\Debug\ERP.Logic.exe
-c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Logic\bin\Debug\ERP.Logic.pdb
-c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Logic\obj\Debug\ERP.Logic.exe
-c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Logic\obj\Debug\ERP.Logic.pdb
+D:\st\da\Obligatorio\ERP.Logic\bin\Debug\ERP.Logic.dll
+D:\st\da\Obligatorio\ERP.Logic\bin\Debug\ERP.Logic.pdb
+D:\st\da\Obligatorio\ERP.Logic\bin\Debug\ERP.Data.dll
+D:\st\da\Obligatorio\ERP.Logic\bin\Debug\ERP.Entities.dll
+D:\st\da\Obligatorio\ERP.Logic\bin\Debug\ERP.Data.pdb
+D:\st\da\Obligatorio\ERP.Logic\bin\Debug\ERP.Entities.pdb
+D:\st\da\Obligatorio\ERP.Logic\obj\Debug\ERP.Logic.csprojResolveAssemblyReference.cache
+D:\st\da\Obligatorio\ERP.Logic\obj\Debug\ERP.Logic.dll
+D:\st\da\Obligatorio\ERP.Logic\obj\Debug\ERP.Logic.pdb

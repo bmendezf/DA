@@ -4,8 +4,8 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AACFCBC7-4339-451A-BB50-EE1CE91A05C0}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{0DC495E0-0C65-478A-85CC-63B79777C816}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ERP.Logic</RootNamespace>
     <AssemblyName>ERP.Logic</AssemblyName>
@@ -13,7 +13,6 @@
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -46,7 +44,14 @@
     <Compile Include="StudentLogic.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <ProjectReference Include="..\ERP.Data\ERP.Data.csproj">
+      <Project>{c95aa58e-a751-4e2c-b692-3c781868d979}</Project>
+      <Name>ERP.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.Entities\ERP.Entities.csproj">
+      <Project>{ac66eb9c-4fca-4078-88e7-1ce372f0840b}</Project>
+      <Name>ERP.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
