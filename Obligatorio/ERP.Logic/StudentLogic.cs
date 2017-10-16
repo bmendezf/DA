@@ -10,9 +10,14 @@ namespace ERP.Logic
     {
         public static bool addStudent(Entities.Student.Student aStudent)
         {
+            if (ERP.Data.Data.students.Contains(aStudent))
+            {
+                return false;
+            }
             ERP.Data.Data.students.Add(aStudent);
             return true;
         }
+
         public static Entities.Student.Student getStudent(Entities.Student.Student aStudent)
         {
             foreach (Entities.Student.Student student in ERP.Data.Data.students)
@@ -25,6 +30,10 @@ namespace ERP.Logic
             return aStudent;
         }
 
+        public static List<Entities.Student.Student> getAllStudents()
+        {
+            return Data.Data.students;
+        }
 
 
     }
