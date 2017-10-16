@@ -60,16 +60,100 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Student\AddStudent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Student\AddStudent.Designer.cs">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\StudentMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Student\StudentMain.Designer.cs">
+      <DependentUpon>StudentMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\StudentMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Student\StudentMenu.Designer.cs">
+      <DependentUpon>StudentMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subject\AddSubject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Subject\AddSubject.Designer.cs">
+      <DependentUpon>AddSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subject\SubjectMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Subject\SubjectMain.Designer.cs">
+      <DependentUpon>SubjectMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subject\SubjectMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Subject\SubjectMenu.Designer.cs">
+      <DependentUpon>SubjectMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\AddTeacher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Teacher\AddTeacher.Designer.cs">
+      <DependentUpon>AddTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\TeacherMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Teacher\TeacherMain.Designer.cs">
+      <DependentUpon>TeacherMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\TeacherMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Teacher\TeacherMenu.Designer.cs">
+      <DependentUpon>TeacherMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Van\AddCoordinates.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Van\AddCoordinates.Designer.cs">
+      <DependentUpon>AddCoordinates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Van\AddVan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Van\AddVan.Designer.cs">
+      <DependentUpon>AddVan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Van\ShowRoutes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Van\ShowRoutes.Designer.cs">
+      <DependentUpon>ShowRoutes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Van\VanMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Van\VanMain.Designer.cs">
+      <DependentUpon>VanMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Van\VanMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Van\VanMenu.Designer.cs">
+      <DependentUpon>VanMenu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,6 +164,48 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Student\AddStudent.resx">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\StudentMain.resx">
+      <DependentUpon>StudentMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\StudentMenu.resx">
+      <DependentUpon>StudentMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subject\AddSubject.resx">
+      <DependentUpon>AddSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subject\SubjectMain.resx">
+      <DependentUpon>SubjectMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subject\SubjectMenu.resx">
+      <DependentUpon>SubjectMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher\AddTeacher.resx">
+      <DependentUpon>AddTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher\TeacherMain.resx">
+      <DependentUpon>TeacherMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher\TeacherMenu.resx">
+      <DependentUpon>TeacherMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Van\AddCoordinates.resx">
+      <DependentUpon>AddCoordinates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Van\AddVan.resx">
+      <DependentUpon>AddVan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Van\ShowRoutes.resx">
+      <DependentUpon>ShowRoutes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Van\VanMain.resx">
+      <DependentUpon>VanMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Van\VanMenu.resx">
+      <DependentUpon>VanMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -105,12 +231,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Student\" />
-    <Folder Include="Subject\" />
-    <Folder Include="Teacher\" />
-    <Folder Include="Van\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
