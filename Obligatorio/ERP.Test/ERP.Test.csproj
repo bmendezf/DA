@@ -57,6 +57,7 @@
     <Compile Include="Subject\SubjectTests.cs" />
     <Compile Include="Teacher\TeacherTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Van\VanLogicTests.cs" />
     <Compile Include="Van\VanTests.cs" />
   </ItemGroup>
   <ItemGroup>
