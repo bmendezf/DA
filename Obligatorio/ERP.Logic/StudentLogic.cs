@@ -45,5 +45,16 @@ namespace ERP.Logic
             return false;
         }
 
+        public static bool updateStudent(Entities.Student.Student aStudent)
+        {
+            if (ERP.Data.Data.students.Contains(aStudent))
+            {
+                ERP.Data.Data.students.Remove(aStudent);
+                ERP.Data.Data.students.Add(aStudent);
+                return true;
+            }
+            return false;
+        }
+
     }
 }

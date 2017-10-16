@@ -52,13 +52,14 @@ namespace ERP.Test.Student
         public void updateStudentTest()
         {
             student.Name = "bruno";
+            Logic.StudentLogic.addStudent(student);
             Entities.Student.Student student2 = new Entities.Student.Student();
-            student2.Name =" Juan";
+            student2.Name = "Juan";
             student2.StudentNumber = student.StudentNumber;
-            Logic.StudentLogic.addStudent(student2);
+            Logic.StudentLogic.updateStudent(student2);
+            Entities.Student.Student updatedStudent = Logic.StudentLogic.getStudent(student);
 
-
-            Assert.AreEqual(student.Name, student2.Name);
+            Assert.AreEqual(updatedStudent.Name, student2.Name);
         }
     }
 }

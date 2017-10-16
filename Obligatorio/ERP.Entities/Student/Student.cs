@@ -48,6 +48,8 @@ namespace ERP.Entities.Student
             }
             return this.StudentNumber== aStudent.StudentNumber;
         }
+
+
     }
 
 }
