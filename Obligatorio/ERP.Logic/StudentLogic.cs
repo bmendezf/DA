@@ -35,7 +35,15 @@ namespace ERP.Logic
             return Data.Data.students;
         }
 
-        
+        public static bool deleteStudent(Entities.Student.Student aStudent)
+        {
+            if (ERP.Data.Data.students.Contains(aStudent))
+            {
+                ERP.Data.Data.students.Remove(aStudent);
+                return true;
+            }
+            return false;
+        }
 
     }
 }
