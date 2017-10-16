@@ -47,5 +47,21 @@ namespace ERP.Test.Van
 
             Assert.AreEqual(students.Count, 0);
         }
+
+        [TestMethod()]
+        public void updateVanTest()
+        {
+            van.Capacity = 10;
+            Logic.VanLogic.addVan(van);
+            Entities.Van.Van van2 = new Entities.Van.Van();
+            van2.Capacity = 15;
+            Logic.VanLogic.updateVan(van2);
+            Entities.Van.Van updatedVan = Logic.VanLogic.getVan(van);
+
+            Assert.AreEqual(updatedVan.Capacity, van2.Capacity);
+        }
+
+
+
     }
 }
