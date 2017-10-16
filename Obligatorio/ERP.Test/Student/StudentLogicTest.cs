@@ -26,6 +26,16 @@ namespace ERP.Test.Student
             Assert.AreEqual(student, studentRecibido);
         }
 
+        [TestMethod()]
+        public void AddStudentRepeatedTest()
+        {
+            Logic.StudentLogic.addStudent(student);
+            Logic.StudentLogic.addStudent(student);
+
+            List<Entities.Student.Student> students = ERP.Logic.StudentLogic.getAllStudents();
+
+            Assert.AreEqual(students.Count, 1);
+        }
 
     }
 }
