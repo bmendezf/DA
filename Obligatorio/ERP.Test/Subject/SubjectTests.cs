@@ -80,5 +80,30 @@ namespace ERP.Entities.Subject.Tests
 
             Assert.AreEqual(aSubject.Teachers, listTeachers);
         }
+
+
+        [TestMethod()]
+        public void subjectsAreEqualTest()
+        {
+            Subject aSubject = new Subject();
+            aSubject.Code = "DA1";
+
+            Subject anotherSubject = new Subject();
+            anotherSubject.Code = "DA1";
+
+            Assert.AreEqual(aSubject, anotherSubject);
+        }
+
+        [TestMethod()]
+        public void subjectsAreNotEqualTest()
+        {
+            Subject aSubject = new Subject();
+            aSubject.Code = "DA1";
+
+            Subject anotherSubject = new Subject();
+            anotherSubject.Code = "DA1";
+
+            Assert.AreNotEqual(aSubject, anotherSubject);
+        }
     }
 }
