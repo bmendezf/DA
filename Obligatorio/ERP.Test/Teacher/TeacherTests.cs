@@ -12,7 +12,7 @@ namespace ERP.Entities.Teacher.Tests
     public class TeacherTests
     {
         [TestMethod()]
-        public void firstNameTest()
+        public void firstNameNotNullTest()
         {
             Teacher aTeacher = new Teacher();
 
@@ -29,7 +29,7 @@ namespace ERP.Entities.Teacher.Tests
         }
 
         [TestMethod()]
-        public void lastNameTest()
+        public void lastNameNotNullTest()
         {
             Teacher aTeacher = new Teacher();
 
@@ -37,7 +37,7 @@ namespace ERP.Entities.Teacher.Tests
         }
 
         [TestMethod()]
-        public void lastNameTest()
+        public void lastNameNotNullTest()
         {
             Teacher aTeacher = new Teacher();
             aTeacher.FirstName = "Garcia";
@@ -47,7 +47,7 @@ namespace ERP.Entities.Teacher.Tests
         }
 
         [TestMethod()]
-        public void subjectsTest()
+        public void subjectsNotNullTest()
         {
             Teacher aTeacher = new Teacher();
 
@@ -65,7 +65,7 @@ namespace ERP.Entities.Teacher.Tests
         }
 
         [TestMethod()]
-        public void iDTest()
+        public void iDNotNullTest()
         {
             Teacher aTeacher = new Teacher();
            
