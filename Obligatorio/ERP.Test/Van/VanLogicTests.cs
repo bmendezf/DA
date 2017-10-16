@@ -26,5 +26,16 @@ namespace ERP.Test.Van
             Assert.AreEqual(van, recivedVan);
         }
 
+        [TestMethod()]
+        public void AddVanRepeatedTest()
+        {
+            Logic.VanLogic.addVan(van);
+            Logic.VanLogic.addVan(van);
+
+            List<Entities.Van.Van> vans = ERP.Logic.VanLogic.getAllVans();
+
+            Assert.AreEqual(vans.Count, 1);
+        }
+
     }
 }

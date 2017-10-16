@@ -30,5 +30,10 @@ namespace ERP.Logic
             return aVan;
         }
 
+        public static List<Entities.Van.Van> getAllVans()
+        {
+            return Data.Data.vans;
+        }
+
     }
 }
