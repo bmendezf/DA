@@ -65,5 +65,13 @@ namespace ERP.Logic
             return capacity;
         }
 
+        public static int getAmount()
+        {
+            int amount = 0;
+            amount = Data.Data.vans.Count;
+
+            return amount;
+        }
+
     }
 }

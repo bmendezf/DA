@@ -67,10 +67,11 @@ namespace ERP.Test.Van
         [TestMethod()]
         public void getCapacityTest()
         {
-            van.Capacity = 14;
+            van.Capacity = 15;
+            Logic.VanLogic.addVan(van);
             int recivedCapacity = Logic.VanLogic.getCapacity(van);
 
-            Assert.AreEqual(14, recivedCapacity);
+            Assert.AreEqual(15, recivedCapacity);
         }
 
 
@@ -78,10 +79,11 @@ namespace ERP.Test.Van
         public void getAmountTest()
         {
             van2.LicensePlate = "a";
-            van2.LicensePlate = "b";
+            van3.LicensePlate = "b";
             Logic.VanLogic.addVan(van);
             Logic.VanLogic.addVan(van2);
             Logic.VanLogic.addVan(van3);
+            List<Entities.Van.Van> vans = Logic.VanLogic.getAllVans();
             int vansAmount = Logic.VanLogic.getAmount();
 
             Assert.AreEqual(3, vansAmount);
