@@ -35,5 +35,14 @@ namespace ERP.Logic
             return Data.Data.vans;
         }
 
+        public static bool deleteVan(Entities.Van.Van aVan)
+        {
+            if (ERP.Data.Data.vans.Contains(aVan))
+            {
+                ERP.Data.Data.vans.Remove(aVan);
+                return true;
+            }
+            return false;
+        }
     }
 }
