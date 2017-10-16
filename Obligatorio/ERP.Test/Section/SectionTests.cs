@@ -9,29 +9,30 @@ using System.Threading.Tasks;
 namespace ERP.Entities.Module.Tests
 {
     [TestClass()]
-    public class ModuleTests
+    public class SectionTests
     {
         [TestMethod()]
         public void nameNotNullTest()
         {
-            Module aModule = new Module();
+            Section aSection = new Section();
 
-            Assert.IsNotNull(aModule.Name);
+            Assert.IsNotNull(aSection.Name);
         }
 
         [TestMethod()]
         public void descriptionNotNullTest()
         {
-            Module aModule = new Module();
+            Section aSection = new Section();
 
-            Assert.IsNotNull(aModule.Description);
+            Assert.IsNotNull(aSection.Description);
         }
+
         [TestMethod()]
         public void actionsNotNullTest()
-            Module aModule = new Module();
+        {
+            Section aSection = new Section();
 
-            Assert.IsNotNull(aModule.Actions);
+            Assert.IsNotNull(aSection.Actions);
         }
-
     }
 }
