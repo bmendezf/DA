@@ -37,7 +37,7 @@ namespace ERP.Entities.Teacher.Tests
         }
 
         [TestMethod()]
-        public void lastNameNotNullTest()
+        public void lastNameTest()
         {
             Teacher aTeacher = new Teacher();
             aTeacher.FirstName = "Garcia";
@@ -58,7 +58,7 @@ namespace ERP.Entities.Teacher.Tests
         public void subjectsTest()
         {
             Teacher aTeacher = new Teacher();
-            List<Subject> aList = new List<Subject>;
+            List<Subject.Subject> aList = new List<Subject.Subject>();
             aTeacher.Subjects = aList;
 
             Assert.Equals(aTeacher.Subjects, aList);

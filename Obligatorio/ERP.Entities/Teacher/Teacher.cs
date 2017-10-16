@@ -8,7 +8,19 @@ namespace ERP.Entities.Teacher
 {
     public class Teacher
     {
-        public void m() { }
+        public string FirstName;
+
+        public string LastName;
+
+        public List<Subject.Subject> Subjects;
+
+        public string Id;
+        public Teacher()
+        {
+            this.FirstName = "";
+            this.LastName = "";
+            this.Subjects = new List<Subject.Subject>();
+        }
 
     }
 }
