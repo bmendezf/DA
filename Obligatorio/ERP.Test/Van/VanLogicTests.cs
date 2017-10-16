@@ -37,5 +37,15 @@ namespace ERP.Test.Van
             Assert.AreEqual(vans.Count, 1);
         }
 
+        [TestMethod()]
+        public void DeleteVanTest()
+        {
+            Logic.VanLogic.addVan(van);
+            Logic.VanLogic.deleteVan(van);
+
+            List<Entities.Van.Van> students = ERP.Logic.VanLogic.getAllVans();
+
+            Assert.AreEqual(students.Count, 0);
+        }
     }
 }
