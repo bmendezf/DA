@@ -55,5 +55,15 @@ namespace ERP.Logic
             }
             return false;
         }
+
+        public static int getCapacity(Entities.Van.Van aVan)
+        {
+            int capacity = 0;
+            Entities.Van.Van van = getVan(aVan);
+            capacity = van.Capacity;
+
+            return capacity;
+        }
+
     }
 }
