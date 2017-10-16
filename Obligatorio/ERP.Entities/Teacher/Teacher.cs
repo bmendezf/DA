@@ -19,8 +19,15 @@ namespace ERP.Entities.Teacher
         {
             this.FirstName = "";
             this.LastName = "";
+            this.Id = "";
             this.Subjects = new List<Subject.Subject>();
         }
 
+        public override bool Equals(object obj)
+        {
+            var item = obj as Teacher;
+            if (item == null) return false;
+            return this.Id.Equals(item.Id);
+        }
     }
 }
