@@ -101,7 +101,7 @@ namespace ERP.Entities.Subject.Tests
             aSubject.Code = "DA1";
 
             Subject anotherSubject = new Subject();
-            anotherSubject.Code = "DA1";
+            anotherSubject.Code = "DA2";
 
             Assert.AreNotEqual(aSubject, anotherSubject);
         }
