@@ -21,9 +21,9 @@ namespace ERP.Test.Student
         public void AddStudentTest()
         {
             Logic.StudentLogic.addStudent(student);
-            Entities.Student.Student studentRecibido = ERP.Logic.StudentLogic.getStudent(student);
+            Entities.Student.Student recivedStudent = ERP.Logic.StudentLogic.getStudent(student);
          
-            Assert.AreEqual(student, studentRecibido);
+            Assert.AreEqual(student, recivedStudent);
         }
 
         [TestMethod()]
