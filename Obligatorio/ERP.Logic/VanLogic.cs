@@ -44,5 +44,16 @@ namespace ERP.Logic
             }
             return false;
         }
+
+        public static bool updateVan(Entities.Van.Van aVan)
+        {
+            if (ERP.Data.Data.vans.Contains(aVan))
+            {
+                ERP.Data.Data.vans.Remove(aVan);
+                ERP.Data.Data.vans.Add(aVan);
+                return true;
+            }
+            return false;
+        }
     }
 }

@@ -16,5 +16,16 @@ namespace ERP.Entities.Van
             Capacity = 0;
             LicensePlate = "";
         }
+
+        public override bool Equals(object obj)
+        {
+            Van aVan = obj as Van;
+
+            if (aVan == null)
+            {
+                return false;
+            }
+            return this.LicensePlate == aVan.LicensePlate;
+        }
     }
 }

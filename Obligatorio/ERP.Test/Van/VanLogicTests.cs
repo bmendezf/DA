@@ -43,9 +43,9 @@ namespace ERP.Test.Van
             Logic.VanLogic.addVan(van);
             Logic.VanLogic.deleteVan(van);
 
-            List<Entities.Van.Van> students = ERP.Logic.VanLogic.getAllVans();
+            List<Entities.Van.Van> vans = ERP.Logic.VanLogic.getAllVans();
 
-            Assert.AreEqual(students.Count, 0);
+            Assert.AreEqual(vans.Count, 0);
         }
 
         [TestMethod()]
@@ -61,6 +61,14 @@ namespace ERP.Test.Van
             Assert.AreEqual(updatedVan.Capacity, van2.Capacity);
         }
 
+        [TestMethod()]
+        public void getCapacityTest()
+        {
+            van.Capacity = 14;
+            int recivedCapacity = Logic.VanLogic.getCapacity(van);
+
+            Assert.AreEqual(14, recivedCapacity);
+        }
 
 
     }

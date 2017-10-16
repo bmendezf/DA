@@ -40,6 +40,7 @@ namespace ERP.Test.Student
         [TestMethod()]
         public void DeleteStudentTest()
         {
+            
             Logic.StudentLogic.addStudent(student);
             Logic.StudentLogic.deleteStudent(student);
 

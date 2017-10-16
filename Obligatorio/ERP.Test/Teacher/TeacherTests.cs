@@ -11,10 +11,6 @@ namespace ERP.Entities.Teacher.Tests
     [TestClass()]
     public class TeacherTests
     {
-        [TestMethod()]
-        public void mTest()
-        {
-            Assert.Fail();
-        }
+        
     }
 }
