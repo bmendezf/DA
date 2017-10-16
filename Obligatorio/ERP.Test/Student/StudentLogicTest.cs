@@ -10,11 +10,13 @@ namespace ERP.Test.Student
     public class StudentLogicTest
     {
         Entities.Student.Student student;
+        Entities.Student.Student student2;
 
         [TestInitialize()]
         public void Initialize()
         {
             student = new Entities.Student.Student();
+            student2 = new Entities.Student.Student();
         }
 
         [TestMethod()]
@@ -54,7 +56,6 @@ namespace ERP.Test.Student
         {
             student.Name = "bruno";
             Logic.StudentLogic.addStudent(student);
-            Entities.Student.Student student2 = new Entities.Student.Student();
             student2.Name = "Juan";
             student2.StudentNumber = student.StudentNumber;
             Logic.StudentLogic.updateStudent(student2);

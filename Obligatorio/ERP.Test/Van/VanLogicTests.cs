@@ -10,11 +10,15 @@ namespace ERP.Test.Van
     {
 
         Entities.Van.Van van;
+        Entities.Van.Van van2;
+        Entities.Van.Van van3;
 
         [TestInitialize()]
         public void Initialize()
         {
             van = new Entities.Van.Van();
+            van2 = new Entities.Van.Van();
+            van3 = new Entities.Van.Van();
         }
 
         [TestMethod()]
@@ -53,7 +57,6 @@ namespace ERP.Test.Van
         {
             van.Capacity = 10;
             Logic.VanLogic.addVan(van);
-            Entities.Van.Van van2 = new Entities.Van.Van();
             van2.Capacity = 15;
             Logic.VanLogic.updateVan(van2);
             Entities.Van.Van updatedVan = Logic.VanLogic.getVan(van);
@@ -70,6 +73,19 @@ namespace ERP.Test.Van
             Assert.AreEqual(14, recivedCapacity);
         }
 
+
+        [TestMethod()]
+        public void getAmountTest()
+        {
+            van2.LicensePlate = "a";
+            van2.LicensePlate = "b";
+            Logic.VanLogic.addVan(van);
+            Logic.VanLogic.addVan(van2);
+            Logic.VanLogic.addVan(van3);
+            int vansAmount = Logic.VanLogic.getAmount();
+
+            Assert.AreEqual(3, vansAmount);
+        }
 
     }
 }
