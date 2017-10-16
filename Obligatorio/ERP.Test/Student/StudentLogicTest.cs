@@ -48,5 +48,17 @@ namespace ERP.Test.Student
             Assert.AreEqual(students.Count, 0);
         }
 
+        [TestMethod()]
+        public void updateStudentTest()
+        {
+            student.Name = "bruno";
+            Entities.Student.Student student2 = new Entities.Student.Student();
+            student2.Name =" Juan";
+            student2.StudentNumber = student.StudentNumber;
+            Logic.StudentLogic.addStudent(student2);
+
+
+            Assert.AreEqual(student.Name, student2.Name);
+        }
     }
 }
