@@ -12,9 +12,91 @@ namespace ERP.Entities.Teacher.Tests
     public class TeacherTests
     {
         [TestMethod()]
-        public void mTest()
+        public void firstNameTest()
         {
-            Assert.Fail();
+            Teacher aTeacher = new Teacher();
+
+            Assert.IsNotNull(aTeacher.FirstName);
+        }
+
+        [TestMethod()]
+        public void firstNameTest()
+        {
+            Teacher aTeacher = new Teacher();
+            aTeacher.FirstName = "Juan";
+
+            Assert.Equals(aTeacher.FirstName, "Juan");
+        }
+
+        [TestMethod()]
+        public void lastNameTest()
+        {
+            Teacher aTeacher = new Teacher();
+
+            Assert.IsNotNull(aTeacher.LastName);
+        }
+
+        [TestMethod()]
+        public void lastNameTest()
+        {
+            Teacher aTeacher = new Teacher();
+            aTeacher.FirstName = "Garcia";
+
+
+            Assert.Equals(aTeacher.LastName, "Garcia");
+        }
+
+        [TestMethod()]
+        public void subjectsTest()
+        {
+            Teacher aTeacher = new Teacher();
+
+            Assert.IsNotNull(aTeacher.Subjects);
+        }
+
+        [TestMethod()]
+        public void subjectsTest()
+        {
+            Teacher aTeacher = new Teacher();
+            List<Subject> aList = new List<Subject>;
+            aTeacher.Subjects = aList;
+
+            Assert.Equals(aTeacher.Subjects, aList);
+        }
+
+        [TestMethod()]
+        public void iDTest()
+        {
+            Teacher aTeacher = new Teacher();
+           
+
+            Assert.IsNotNull(aTeacher.Id);
+        }
+
+        [TestMethod()]
+        public void teacherEqualityTrueTest()
+        {
+            Teacher aTeacher = new Teacher();
+            aTeacher.Id = "47319195";
+
+            Teacher anotherTeacher = new Teacher();
+            anotherTeacher.Id = "47319195";
+
+
+            Assert.Equals(aTeacher, anotherTeacher);
+        }
+
+        [TestMethod()]
+        public void teacherEqualityFalseTest()
+        {
+            Teacher aTeacher = new Teacher();
+            aTeacher.Id = "47319195";
+
+            Teacher anotherTeacher = new Teacher();
+            anotherTeacher.Id = "17970731";
+
+
+            Assert.AreNotEqual(aTeacher, anotherTeacher);
         }
     }
 }
