@@ -57,7 +57,7 @@ namespace ERP.Entities.Subject.Tests
         public void studentsTest()
         {
             Subject aSubject = new Subject();
-            List<Student.Student> listStudents = new List<Student.Student>;
+            List<Student.Student> listStudents = new List<Student.Student>();
             aSubject.Students = listStudents;
 
             Assert.AreEqual(aSubject.Students, listStudents);
@@ -75,7 +75,7 @@ namespace ERP.Entities.Subject.Tests
         public void teachersTest()
         {
             Subject aSubject = new Subject();
-            List<Teacher.Teacher> listTeachers = new List<Teacher.Teacher>;
+            List<Teacher.Teacher> listTeachers = new List<Teacher.Teacher>();
             aSubject.Teachers = listTeachers;
 
             Assert.AreEqual(aSubject.Teachers, listTeachers);
