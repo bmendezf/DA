@@ -37,5 +37,16 @@ namespace ERP.Test.Student
             Assert.AreEqual(students.Count, 1);
         }
 
+        [TestMethod()]
+        public void DeleteStudentTest()
+        {
+            Logic.StudentLogic.addStudent(student);
+            Logic.StudentLogic.deleteStudent(student);
+
+            List<Entities.Student.Student> students = ERP.Logic.StudentLogic.getAllStudents();
+
+            Assert.AreEqual(students.Count, 0);
+        }
+
     }
 }
