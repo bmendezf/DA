@@ -25,7 +25,7 @@ namespace ERP.Entities.Teacher.Tests
             Teacher aTeacher = new Teacher();
             aTeacher.FirstName = "Juan";
 
-            Assert.Equals(aTeacher.FirstName, "Juan");
+            Assert.AreEqual(aTeacher.FirstName, "Juan");
         }
 
         [TestMethod()]
@@ -40,10 +40,10 @@ namespace ERP.Entities.Teacher.Tests
         public void lastNameTest()
         {
             Teacher aTeacher = new Teacher();
-            aTeacher.FirstName = "Garcia";
+            aTeacher.LastName = "Garcia";
 
 
-            Assert.Equals(aTeacher.LastName, "Garcia");
+            Assert.AreEqual(aTeacher.LastName, "Garcia");
         }
 
         [TestMethod()]
@@ -61,7 +61,7 @@ namespace ERP.Entities.Teacher.Tests
             List<Subject.Subject> aList = new List<Subject.Subject>();
             aTeacher.Subjects = aList;
 
-            Assert.Equals(aTeacher.Subjects, aList);
+            Assert.AreEqual(aTeacher.Subjects, aList);
         }
 
         [TestMethod()]
@@ -83,7 +83,7 @@ namespace ERP.Entities.Teacher.Tests
             anotherTeacher.Id = "47319195";
 
 
-            Assert.Equals(aTeacher, anotherTeacher);
+            Assert.AreEqual(aTeacher, anotherTeacher);
         }
 
         [TestMethod()]
