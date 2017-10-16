@@ -20,9 +20,16 @@ namespace ERP.Entities.Subject
         {
             this.Name = "";
             this.Code = "";
-            this.Students = new List<Student.Student>;
-            this.Teachers = new List<Teacher.Teacher>;
+            this.Students = new List<Student.Student>();
+            this.Teachers = new List<Teacher.Teacher>();
 
+        }
+
+        public override bool Equals(object obj)
+        {
+            var item = obj as Subject;
+            if (item == null) return false;
+            return this.Code.Equals(item.Code);
         }
     }
 }
