@@ -8,19 +8,19 @@ namespace ERP.Logic
 {
     public class StudentLogic
     {
-        public static bool addStudent(Entities.Student.Student aStudent)
+        public bool addStudent(Entities.Student.Student aStudent)
         {
-            if (ERP.Data.Data.students.Contains(aStudent))
+            if (ERP.Data.Data.Students.Contains(aStudent))
             {
                 return false;
             }
-            ERP.Data.Data.students.Add(aStudent);
+            ERP.Data.Data.Students.Add(aStudent);
             return true;
         }
 
-        public static Entities.Student.Student getStudent(Entities.Student.Student aStudent)
+        public Entities.Student.Student getStudent(Entities.Student.Student aStudent)
         {
-            foreach (Entities.Student.Student student in ERP.Data.Data.students)
+            foreach (Entities.Student.Student student in ERP.Data.Data.Students)
             {
                 if (student.Equals(aStudent))
                 {
@@ -30,26 +30,26 @@ namespace ERP.Logic
             return aStudent;
         }
 
-        public static List<Entities.Student.Student> getAllStudents()
+        public List<Entities.Student.Student> getAllStudents()
         {
-            return Data.Data.students;
+            return Data.Data.Students;
         }
 
-        public static bool deleteStudent(Entities.Student.Student aStudent)
+        public bool deleteStudent(Entities.Student.Student aStudent)
         {
-            if (ERP.Data.Data.students.Contains(aStudent))
+            if (ERP.Data.Data.Students.Contains(aStudent))
             {
-                ERP.Data.Data.students.Remove(aStudent);
+                ERP.Data.Data.Students.Remove(aStudent);
                 return true;
             }
             return false;
         }
 
-        public static bool updateStudent(Entities.Student.Student aStudent)
+        public bool updateStudent(Entities.Student.Student aStudent)
         {
-            if (ERP.Data.Data.students.Contains(aStudent))
+            if (ERP.Data.Data.Students.Contains(aStudent))
             {
-                ERP.Data.Data.students.Remove(aStudent);
+                ERP.Data.Data.Students.Remove(aStudent);
                 ERP.Data.Data.students.Add(aStudent);
                 return true;
             }
