@@ -43,7 +43,22 @@ namespace ERP.Test.Student
         {
             studentLogic.AddStudent(student);
            
-            Assert.IsTrue(studentLogic.deleteStudent(student));
+            Assert.IsTrue(studentLogic.DeleteStudent(student));
+        }
+
+        [TestMethod()]
+        public void DeleteStudentFalseTest()
+        {
+            Assert.IsFalse(studentLogic.DeleteStudent(student));
+        }
+
+        [TestMethod()]
+        public void GetStudentTest()
+        {
+            studentLogic.AddStudent(student);
+            Entities.Student.Student recivedStudent = studentLogic.getStudent(student);
+
+            Assert.AreEqual(student,recivedStudent);
         }
 
         //    [TestMethod()]

@@ -23,7 +23,7 @@ namespace ERP.Logic
 
         public bool DeleteStudent(Student aStudent)
         {
-            throw new NotImplementedException();
+            return dataBase.DeleteStudent(aStudent);
         }
 
         public bool GetAllStudents(Student aStudent)
@@ -33,7 +33,7 @@ namespace ERP.Logic
 
         public Student getStudent(Student aStudent)
         {
-            throw new NotImplementedException();
+            return dataBase.GetStudent(aStudent);
         }
 
         public bool UpdateStudent(Student aStudent)

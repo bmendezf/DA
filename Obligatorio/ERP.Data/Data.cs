@@ -59,11 +59,32 @@ namespace ERP.Data
             }
         }
 
-        public bool DeleteStudent(Student aStudent) { return false; }
+        public bool DeleteStudent(Student aStudent) {
+            if (Students.Contains(aStudent))
+            {
+                Students.Remove(aStudent);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
         public bool UpdateStudent(Student aStudent) { return false; }
 
-        public Student GetStudent(Student aStudent) { return null; }
+        public Student GetStudent(Student aStudent)
+        {
+            if (!Students.Contains(aStudent))
+            {
+                return null;
+            }
+            else
+            {
+                int index = Students.IndexOf(aStudent);
+                return Students[index];
+            }
+        }
 
         public bool AddSubject(Subject aSubject)
         {
