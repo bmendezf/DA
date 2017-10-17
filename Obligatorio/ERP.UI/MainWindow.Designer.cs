@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.title = new System.Windows.Forms.Label();
-            this.subjectMB = new System.Windows.Forms.Button();
-            this.teacherMB = new System.Windows.Forms.Button();
-            this.studentMB = new System.Windows.Forms.Button();
-            this.vanMB = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.subMenuPanel = new System.Windows.Forms.Panel();
             this.mainPanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
@@ -49,58 +49,57 @@
             this.title.Text = "SISTEMA DEL COLEGIO";
             this.title.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // subjectMB
+            // button1
             // 
-            this.subjectMB.BackColor = System.Drawing.Color.SteelBlue;
-            this.subjectMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.subjectMB.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subjectMB.ForeColor = System.Drawing.Color.AliceBlue;
-            this.subjectMB.Location = new System.Drawing.Point(37, 78);
-            this.subjectMB.Name = "subjectMB";
-            this.subjectMB.Size = new System.Drawing.Size(147, 46);
-            this.subjectMB.TabIndex = 1;
-            this.subjectMB.Text = "MATERIAS";
-            this.subjectMB.UseVisualStyleBackColor = false;
-            this.subjectMB.Click += new System.EventHandler(this.subjectMB_Click_1);
+            this.button1.BackColor = System.Drawing.Color.SteelBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.AliceBlue;
+            this.button1.Location = new System.Drawing.Point(37, 78);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(147, 46);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "MATERIAS";
+            this.button1.UseVisualStyleBackColor = false;
             // 
-            // teacherMB
+            // button2
             // 
-            this.teacherMB.BackColor = System.Drawing.Color.SteelBlue;
-            this.teacherMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.teacherMB.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.teacherMB.ForeColor = System.Drawing.Color.AliceBlue;
-            this.teacherMB.Location = new System.Drawing.Point(190, 78);
-            this.teacherMB.Name = "teacherMB";
-            this.teacherMB.Size = new System.Drawing.Size(147, 46);
-            this.teacherMB.TabIndex = 2;
-            this.teacherMB.Text = "DOCENTES";
-            this.teacherMB.UseVisualStyleBackColor = false;
+            this.button2.BackColor = System.Drawing.Color.SteelBlue;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.AliceBlue;
+            this.button2.Location = new System.Drawing.Point(190, 78);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(147, 46);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "DOCENTES";
+            this.button2.UseVisualStyleBackColor = false;
             // 
-            // studentMB
+            // button3
             // 
-            this.studentMB.BackColor = System.Drawing.Color.SteelBlue;
-            this.studentMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.studentMB.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studentMB.ForeColor = System.Drawing.Color.AliceBlue;
-            this.studentMB.Location = new System.Drawing.Point(343, 78);
-            this.studentMB.Name = "studentMB";
-            this.studentMB.Size = new System.Drawing.Size(147, 46);
-            this.studentMB.TabIndex = 3;
-            this.studentMB.Text = "ALUMNOS";
-            this.studentMB.UseVisualStyleBackColor = false;
+            this.button3.BackColor = System.Drawing.Color.SteelBlue;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.AliceBlue;
+            this.button3.Location = new System.Drawing.Point(343, 78);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(147, 46);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "ALUMNOS";
+            this.button3.UseVisualStyleBackColor = false;
             // 
-            // vanMB
+            // button4
             // 
-            this.vanMB.BackColor = System.Drawing.Color.SteelBlue;
-            this.vanMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.vanMB.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vanMB.ForeColor = System.Drawing.Color.AliceBlue;
-            this.vanMB.Location = new System.Drawing.Point(496, 78);
-            this.vanMB.Name = "vanMB";
-            this.vanMB.Size = new System.Drawing.Size(147, 46);
-            this.vanMB.TabIndex = 4;
-            this.vanMB.Text = "CAMIONETAS";
-            this.vanMB.UseVisualStyleBackColor = false;
+            this.button4.BackColor = System.Drawing.Color.SteelBlue;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.AliceBlue;
+            this.button4.Location = new System.Drawing.Point(496, 78);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(147, 46);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "CAMIONETAS";
+            this.button4.UseVisualStyleBackColor = false;
             // 
             // subMenuPanel
             // 
@@ -124,10 +123,10 @@
             this.ClientSize = new System.Drawing.Size(1110, 674);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.subMenuPanel);
-            this.Controls.Add(this.vanMB);
-            this.Controls.Add(this.studentMB);
-            this.Controls.Add(this.teacherMB);
-            this.Controls.Add(this.subjectMB);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.title);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -142,10 +141,10 @@
         #endregion
 
         private System.Windows.Forms.Label title;
-        private System.Windows.Forms.Button subjectMB;
-        private System.Windows.Forms.Button teacherMB;
-        private System.Windows.Forms.Button studentMB;
-        private System.Windows.Forms.Button vanMB;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel subMenuPanel;
         private System.Windows.Forms.Panel mainPanel;
     }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ERP.Data;
 using ERP.Entities.Subject;
 using ERP.Entities.Student;
 using ERP.Entities.Teacher;

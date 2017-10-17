@@ -16,6 +16,9 @@ D:\st\da\Obligatorio\ERP.Test\bin\Debug\ERP.Data.pdb
 D:\st\da\Obligatorio\ERP.Test\obj\Debug\ERP.Test.csprojResolveAssemblyReference.cache
 D:\st\da\Obligatorio\ERP.Test\obj\Debug\ERP.Test.dll
 D:\st\da\Obligatorio\ERP.Test\obj\Debug\ERP.Test.pdb
+C:\Users\User\Documents\DA\Obligatorio\ERP.Test\obj\Debug\ERP.Test.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\DA\Obligatorio\ERP.Test\obj\Debug\ERP.Test.dll
+C:\Users\User\Documents\DA\Obligatorio\ERP.Test\obj\Debug\ERP.Test.pdb
 C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Test\obj\Debug\ERP.Test.csprojResolveAssemblyReference.cache
 C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Test\bin\Debug\ERP.Test.dll
 C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Test\bin\Debug\ERP.Test.pdb

@@ -7,21 +7,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ERP.Entities;
 
 namespace ERP.UI
 {
     public partial class MainWindow : Form
     {
-        public Data.Data database;
-
         public MainWindow()
         {
             InitializeComponent();
         }
 
+        private void subjectMB_Click(object sender, EventArgs e)
+        {
 
-        private void subjectMB_Click_1(object sender, EventArgs e)
+        }
+
+        private void teacherMB_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void studentMB_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void vanMB_Click(object sender, EventArgs e)
         {
 
         }

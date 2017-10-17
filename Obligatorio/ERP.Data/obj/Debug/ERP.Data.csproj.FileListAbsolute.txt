@@ -11,6 +11,14 @@ D:\st\da\Obligatorio\ERP.Data\bin\Debug\ERP.Entities.pdb
 D:\st\da\Obligatorio\ERP.Data\obj\Debug\ERP.Data.csprojResolveAssemblyReference.cache
 D:\st\da\Obligatorio\ERP.Data\obj\Debug\ERP.Data.dll
 D:\st\da\Obligatorio\ERP.Data\obj\Debug\ERP.Data.pdb
+C:\Users\User\Documents\DA\Obligatorio\ERP.Data\bin\Debug\ERP.Data.dll.config
+C:\Users\User\Documents\DA\Obligatorio\ERP.Data\bin\Debug\ERP.Data.dll
+C:\Users\User\Documents\DA\Obligatorio\ERP.Data\bin\Debug\ERP.Data.pdb
+C:\Users\User\Documents\DA\Obligatorio\ERP.Data\bin\Debug\ERP.Entities.dll
+C:\Users\User\Documents\DA\Obligatorio\ERP.Data\bin\Debug\ERP.Entities.pdb
+C:\Users\User\Documents\DA\Obligatorio\ERP.Data\obj\Debug\ERP.Data.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\DA\Obligatorio\ERP.Data\obj\Debug\ERP.Data.dll
+C:\Users\User\Documents\DA\Obligatorio\ERP.Data\obj\Debug\ERP.Data.pdb
 C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Data\bin\Debug\ERP.Data.dll.config
 C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Data\bin\Debug\ERP.Data.dll
 C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Data\bin\Debug\ERP.Data.pdb
