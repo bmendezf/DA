@@ -8,6 +8,12 @@ namespace ERP.Logic
 {
     public class StudentLogic
     {
+        private Data.Data dataBase;
+
+        public StudentLogic(Data.Data someDatabase)
+        {
+            this.dataBase = someDatabase;
+        }
         //public bool addStudent(Entities.Student.Student aStudent)
         //{
         //    if (ERP.Data.Data.Students.Contains(aStudent))

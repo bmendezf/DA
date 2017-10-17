@@ -1,5 +1,4 @@
 c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.UI\bin\Debug\ERP.UI.exe.config
-C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.UI\bin\Debug\ERP.UI.exe.config
 D:\st\da\Obligatorio\ERP.UI\bin\Debug\ERP.UI.exe.config
 D:\st\da\Obligatorio\ERP.UI\bin\Debug\ERP.UI.exe
 D:\st\da\Obligatorio\ERP.UI\bin\Debug\ERP.UI.pdb
@@ -31,3 +30,26 @@ C:\Users\User\Documents\DA\Obligatorio\ERP.UI\obj\Debug\ERP.UI.Van.VanMenu.resou
 C:\Users\User\Documents\DA\Obligatorio\ERP.UI\obj\Debug\ERP.UI.csproj.GenerateResource.Cache
 C:\Users\User\Documents\DA\Obligatorio\ERP.UI\obj\Debug\ERP.UI.exe
 C:\Users\User\Documents\DA\Obligatorio\ERP.UI\obj\Debug\ERP.UI.pdb
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.UI\bin\Debug\ERP.UI.exe.config
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.UI\bin\Debug\ERP.UI.exe
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.UI\bin\Debug\ERP.UI.pdb
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.UI\obj\Debug\ERP.UI.csprojResolveAssemblyReference.cache
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.UI\obj\Debug\ERP.UI.MainWindow.resources
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.UI\obj\Debug\ERP.UI.Properties.Resources.resources
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.UI\obj\Debug\ERP.UI.Student.AddStudent.resources
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.UI\obj\Debug\ERP.UI.Student.StudentMain.resources
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.UI\obj\Debug\ERP.UI.Student.StudentMenu.resources
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.UI\obj\Debug\ERP.UI.Subject.AddSubject.resources
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.UI\obj\Debug\ERP.UI.Subject.SubjectMain.resources
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.UI\obj\Debug\ERP.UI.Subject.SubjectMenu.resources
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.UI\obj\Debug\ERP.UI.Teacher.AddTeacher.resources
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.UI\obj\Debug\ERP.UI.Teacher.TeacherMain.resources
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.UI\obj\Debug\ERP.UI.Teacher.TeacherMenu.resources
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.UI\obj\Debug\ERP.UI.Van.AddCoordinates.resources
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.UI\obj\Debug\ERP.UI.Van.AddVan.resources
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.UI\obj\Debug\ERP.UI.Van.ShowRoutes.resources
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.UI\obj\Debug\ERP.UI.Van.VanMain.resources
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.UI\obj\Debug\ERP.UI.Van.VanMenu.resources
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.UI\obj\Debug\ERP.UI.csproj.GenerateResource.Cache
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.UI\obj\Debug\ERP.UI.exe
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.UI\obj\Debug\ERP.UI.pdb

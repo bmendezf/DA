@@ -16,3 +16,12 @@ C:\Users\User\Documents\DA\Obligatorio\ERP.Logic\bin\Debug\ERP.Entities.pdb
 C:\Users\User\Documents\DA\Obligatorio\ERP.Logic\obj\Debug\ERP.Logic.csprojResolveAssemblyReference.cache
 C:\Users\User\Documents\DA\Obligatorio\ERP.Logic\obj\Debug\ERP.Logic.dll
 C:\Users\User\Documents\DA\Obligatorio\ERP.Logic\obj\Debug\ERP.Logic.pdb
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Logic\bin\Debug\ERP.Logic.dll
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Logic\bin\Debug\ERP.Logic.pdb
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Logic\bin\Debug\ERP.Data.dll
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Logic\bin\Debug\ERP.Entities.dll
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Logic\bin\Debug\ERP.Data.pdb
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Logic\bin\Debug\ERP.Entities.pdb
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Logic\obj\Debug\ERP.Logic.csprojResolveAssemblyReference.cache
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Logic\obj\Debug\ERP.Logic.dll
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Logic\obj\Debug\ERP.Logic.pdb

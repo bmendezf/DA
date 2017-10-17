@@ -5,13 +5,6 @@ c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.T
 c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Test\obj\Debug\ERP.Test.csprojResolveAssemblyReference.cache
 c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Test\obj\Debug\ERP.Test.dll
 c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Test\obj\Debug\ERP.Test.pdb
-C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Test\obj\Debug\ERP.Test.csprojResolveAssemblyReference.cache
-C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Test\obj\Debug\ERP.Test.dll
-C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Test\obj\Debug\ERP.Test.pdb
-C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Test\bin\Debug\ERP.Test.dll
-C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Test\bin\Debug\ERP.Test.pdb
-C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Test\bin\Debug\ERP.Entities.exe
-C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Test\bin\Debug\ERP.Entities.pdb
 D:\st\da\Obligatorio\ERP.Test\bin\Debug\ERP.Test.dll
 D:\st\da\Obligatorio\ERP.Test\bin\Debug\ERP.Test.pdb
 D:\st\da\Obligatorio\ERP.Test\bin\Debug\ERP.Entities.dll
@@ -26,3 +19,4 @@ D:\st\da\Obligatorio\ERP.Test\obj\Debug\ERP.Test.pdb
 C:\Users\User\Documents\DA\Obligatorio\ERP.Test\obj\Debug\ERP.Test.csprojResolveAssemblyReference.cache
 C:\Users\User\Documents\DA\Obligatorio\ERP.Test\obj\Debug\ERP.Test.dll
 C:\Users\User\Documents\DA\Obligatorio\ERP.Test\obj\Debug\ERP.Test.pdb
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Test\obj\Debug\ERP.Test.csprojResolveAssemblyReference.cache

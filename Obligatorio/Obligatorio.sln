@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Entities", "ERP.Entities\ERP.Entities.csproj", "{AC66EB9C-4FCA-4078-88E7-1CE372F0840B}"
 EndProject
@@ -12,6 +12,7 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Test", "ERP.Test\ERP.Test.csproj", "{8F7B56AE-7151-41E7-A8B7-CE56566C69BD}"
 	ProjectSection(ProjectDependencies) = postProject
 		{C95AA58E-A751-4E2C-B692-3C781868D979} = {C95AA58E-A751-4E2C-B692-3C781868D979}
+		{0DC495E0-0C65-478A-85CC-63B79777C816} = {0DC495E0-0C65-478A-85CC-63B79777C816}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Logic", "ERP.Logic\ERP.Logic.csproj", "{0DC495E0-0C65-478A-85CC-63B79777C816}"
