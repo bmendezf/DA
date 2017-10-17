@@ -61,17 +61,23 @@ namespace ERP.Test.Van
             Assert.AreEqual(van, recivedVan);
         }
 
-        //[TestMethod()]
-        //public void updateVanTest()
-        //{
-        //    van.Capacity = 10;
-        //    Logic.VanLogic.addVan(van);
-        //    van2.Capacity = 15;
-        //    Logic.VanLogic.updateVan(van2);
-        //    Entities.Van.Van updatedVan = Logic.VanLogic.getVan(van);
+        [TestMethod()]
+        public void updateVanTest()
+        {
+            van.Capacity = 12;
+            vanLogic.AddVan(van);
+            Entities.Van.Van modifiedVan = new Entities.Van.Van();
+            modifiedVan.Capacity = 16;
+            vanLogic.UpdateVan(modifiedVan);
 
-        //    Assert.AreEqual(updatedVan.Capacity, van2.Capacity);
-        //}
+            Assert.AreEqual(modifiedVan.Capacity, vanLogic.GetVan(van).Capacity);
+        }
+
+        [TestMethod()]
+        public void updateVanFalseTest()
+        {
+            Assert.IsFalse(vanLogic.UpdateVan(van));
+        }
 
         //[TestMethod()]
         //public void getCapacityTest()
