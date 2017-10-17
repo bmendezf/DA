@@ -52,6 +52,15 @@ namespace ERP.Test.Van
             Assert.IsFalse(vanLogic.DeleteVan(van));
         }
 
+        [TestMethod()]
+        public void GetVanTest()
+        {
+            vanLogic.AddVan(van);
+            Entities.Van.Van recivedVan = vanLogic.getVan(van);
+
+            Assert.AreEqual(van, recivedVan);
+        }
+
         //[TestMethod()]
         //public void updateVanTest()
         //{

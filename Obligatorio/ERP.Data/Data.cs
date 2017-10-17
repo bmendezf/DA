@@ -293,7 +293,17 @@ namespace ERP.Data
             }
         }
 
-        public bool DeleteVan(Van aVan) { return false; }
+        public bool DeleteVan(Van aVan) {
+            if (Vans.Contains(aVan))
+            {
+                Vans.Remove(aVan);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
         public bool UpdateVan(Van aVan) { return false; }
 

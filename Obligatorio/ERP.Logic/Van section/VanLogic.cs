@@ -23,7 +23,7 @@ namespace ERP.Logic
 
         public bool DeleteVan(Van aVan)
         {
-            throw new NotImplementedException();
+            return dataBase.DeleteVan(aVan);
         }
 
         public List<Van> GetAllVans()
