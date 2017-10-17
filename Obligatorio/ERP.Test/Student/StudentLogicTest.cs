@@ -20,6 +20,7 @@ namespace ERP.Test.Student
         public void Initialize()
         {
             student = new Entities.Student.Student();
+            student.CI = "1234567-8";
             aDatabase = new Data.Data();
             studentLogic = new StudentLogic(aDatabase);
         }
@@ -68,6 +69,7 @@ namespace ERP.Test.Student
             studentLogic.AddStudent(student);
             Entities.Student.Student modifiedStudent = new Entities.Student.Student();
             modifiedStudent.Name = "Juan";
+            modifiedStudent.CI = "1234567-8";
             modifiedStudent.StudentNumber = student.StudentNumber;
             studentLogic.UpdateStudent(modifiedStudent);
 

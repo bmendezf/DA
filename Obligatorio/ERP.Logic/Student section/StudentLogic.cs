@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ERP.Entities.Student;
+using ERP.Entities.Validators.Student;
 
 namespace ERP.Logic
 {
@@ -18,7 +19,15 @@ namespace ERP.Logic
 
         public bool AddStudent(Student aStudent)
         {
-            return dataBase.AddStudent(aStudent);
+            if (ERP.Entities.Validators.Student.StudentValidator.CIValidator(aStudent.CI))
+            {
+                return dataBase.AddStudent(aStudent);
+            }
+            else
+            {
+                return false;
+            }
+            
         }
 
         public bool DeleteStudent(Student aStudent)
@@ -33,7 +42,14 @@ namespace ERP.Logic
 
         public bool UpdateStudent(Student aStudent)
         {
-            return dataBase.UpdateStudent(aStudent);
+            if (ERP.Entities.Validators.Student.StudentValidator.CIValidator(aStudent.CI))
+            {
+                return dataBase.UpdateStudent(aStudent);
+            }
+            else
+            {
+                return false;
+            }    
         }
 
         public List<Student> GetAllStudents()
