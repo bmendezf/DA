@@ -16,12 +16,28 @@ namespace ERP.Logic
         {
             this.database = someDatabase;
         }
-        public bool AddTeacher(Teacher aTeacher) { return false; }
+        public bool AddTeacher(Teacher aTeacher)
+        {
+            //RUN VALIDATORS
+            return database.AddTeacher(aTeacher);
+        }
 
-        public bool DeleteTeacher(Teacher aTeacher) { return false; }
+        public bool DeleteTeacher(Teacher aTeacher)
+        {  
+            //RUN VALIDATORS
+            return database.DeleteTeacher(aTeacher);
+        }
 
-        public bool UpdateTeacher(Teacher aTeacher) { return false; }
+        public bool UpdateTeacher(Teacher aTeacher)
+        {
+            //RUN VALIDATORS
+            return database.UpdateTeacher(aTeacher);
+        }
 
-        public List<Teacher> GetAllTeachers() { return null; }
+        public List<Teacher> GetAllTeachers()
+        {
+            //RUN VALIDATORS
+            return database.GetAllTeachers();
+        }
     }
 }

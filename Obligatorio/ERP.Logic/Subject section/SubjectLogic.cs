@@ -19,36 +19,57 @@ namespace ERP.Logic
         {
             this.database = someDatabase;
         }
-        public bool AddSubject(Subject sSubject) { return false; }
+        public bool AddSubject(Subject aSubject)
+        {
+            //RUN VALIDATORS
+            return database.AddSubject(aSubject);
+        }
 
-        public bool DeleteSubject(Subject sSubject) { return false; }
+        public bool DeleteSubject(Subject aSubject)
+        {
+            //RUN VALIDATORS
+            return database.DeleteSubject(aSubject);
+        }
 
-        public bool UpdateSubject(Subject sSubject) { return false; }
+        public bool UpdateSubject(Subject aSubject)
+        {
+            //RUN VALIDATORS
+            return database.UpdateSubject(aSubject); 
+        }
 
-        public Subject GetSubject(Subject sSubject) { return null; }
+        public Subject GetSubject(Subject aSubject)
+        {
+            //RUN VALIDATORS
+            return database.GetSubject(aSubject); 
+        }
 
         public List<Subject> GetAllSubjects()
         {
-            return null;
+            //RUN VALIDATORS
+            return database.GetAllSubjects();
         }
 
         public List<Student> GetStudentsBySubject(Subject aSubject)
         {
-            return null;
+            //RUN VALIDATORS
+            return database.GetStudentsBySubject(aSubject);
         }
 
         public List<Teacher> GetTeachersBySubject(Subject aSubject)
         {
-            return null;
+            //RUN VALIDATORS
+            return database.GetTeachersBySubject(aSubject);
         }
 
         public List<Subject> GetSubjectsByStudent(Student aStudent)
         {
-            return null;
+            //RUN VALIDATORS
+            return database.GetSubjectsByStudent(aStudent);
         }
-        public List<Teacher> GetSubejctsByTeacher(Teacher aTeacher)
+        public List<Subject> GetSubjectsByTeacher(Teacher aTeacher)
         {
-            return null;
+            //RUN VALIDATORS
+            return database.GetSubjectsByTeacher(aTeacher);
         }
 
 

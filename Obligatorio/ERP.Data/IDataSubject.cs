@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ERP.Entities.Subject;
+using ERP.Entities.Student;
+using ERP.Entities.Teacher;
 
 namespace ERP.Data
 {
@@ -11,14 +13,16 @@ namespace ERP.Data
     {
         List<Subject> Subjects { get; set; }
 
-        bool AddSubject(Subject sSubject);
+        bool AddSubject(Subject aSubject);
 
-        bool DeleteSubject(Subject sSubject);
+        bool DeleteSubject(Subject aSubject);
 
-        bool UpdateSubject(Subject sSubject);
+        bool UpdateSubject(Subject aSubject);
 
-        Subject GetSubject(Subject sSubject);
-
+        Subject GetSubject(Subject aSubject);
+        List<Subject> GetAllSubjects();
+        List<Student> GetStudentsBySubject(Subject aSubject);
+        List<Teacher> GetTeachersBySubject(Subject aSubject);
 
 
     }
