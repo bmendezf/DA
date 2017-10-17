@@ -1,13 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Entities", "ERP.Entities\ERP.Entities.csproj", "{AC66EB9C-4FCA-4078-88E7-1CE372F0840B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Data", "ERP.Data\ERP.Data.csproj", "{C95AA58E-A751-4E2C-B692-3C781868D979}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.UI", "ERP.UI\ERP.UI.csproj", "{B94999B2-A855-4E93-9DE5-06243D1CCB26}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Test", "ERP.Test\ERP.Test.csproj", "{8F7B56AE-7151-41E7-A8B7-CE56566C69BD}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -16,9 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Test", "ERP.Test\ERP.Te
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Logic", "ERP.Logic\ERP.Logic.csproj", "{0DC495E0-0C65-478A-85CC-63B79777C816}"
-	ProjectSection(ProjectDependencies) = postProject
-		{B94999B2-A855-4E93-9DE5-06243D1CCB26} = {B94999B2-A855-4E93-9DE5-06243D1CCB26}
-	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.UI", "ERP.UI.Desktop\ERP.UI.csproj", "{E4C0F3F5-A357-47E4-8483-5A91AE546BE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,10 +31,6 @@ Global
 		{C95AA58E-A751-4E2C-B692-3C781868D979}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C95AA58E-A751-4E2C-B692-3C781868D979}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C95AA58E-A751-4E2C-B692-3C781868D979}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B94999B2-A855-4E93-9DE5-06243D1CCB26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B94999B2-A855-4E93-9DE5-06243D1CCB26}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B94999B2-A855-4E93-9DE5-06243D1CCB26}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B94999B2-A855-4E93-9DE5-06243D1CCB26}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8F7B56AE-7151-41E7-A8B7-CE56566C69BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8F7B56AE-7151-41E7-A8B7-CE56566C69BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F7B56AE-7151-41E7-A8B7-CE56566C69BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -46,6 +39,10 @@ Global
 		{0DC495E0-0C65-478A-85CC-63B79777C816}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DC495E0-0C65-478A-85CC-63B79777C816}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DC495E0-0C65-478A-85CC-63B79777C816}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4C0F3F5-A357-47E4-8483-5A91AE546BE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4C0F3F5-A357-47E4-8483-5A91AE546BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4C0F3F5-A357-47E4-8483-5A91AE546BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4C0F3F5-A357-47E4-8483-5A91AE546BE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

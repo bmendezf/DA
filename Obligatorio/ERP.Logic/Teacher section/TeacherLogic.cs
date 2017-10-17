@@ -39,5 +39,11 @@ namespace ERP.Logic
             //RUN VALIDATORS
             return database.GetAllTeachers();
         }
+
+        public Teacher GetTeacher(Teacher aTeacher)
+        {
+            //RUN VALIDATORS
+            return database.GetTeacher(aTeacher);
+        }
     }
 }
