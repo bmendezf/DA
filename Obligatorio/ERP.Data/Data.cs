@@ -97,6 +97,11 @@ namespace ERP.Data
             }
         }
 
+        public List<Student> GetAllStudents()
+        {
+            return Students;
+        }
+
         public bool AddSubject(Subject aSubject)
         {
             if (Subjects.Contains(aSubject))

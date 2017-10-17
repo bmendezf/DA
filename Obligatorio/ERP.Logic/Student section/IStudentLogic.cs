@@ -15,7 +15,7 @@ namespace ERP.Logic
 
         bool UpdateStudent(Student aStudent);
 
-        bool GetAllStudents(Student aStudent);
+        List<Student> GetAllStudents();
 
         Student getStudent(Student aStudent);
 

@@ -73,6 +73,22 @@ namespace ERP.Test.Student
 
             Assert.AreEqual(modifiedStudent.Name, studentLogic.getStudent(student).Name);
         }
+
+        [TestMethod()]
+        public void updateStudentFalseTest()
+        {
+            Assert.IsFalse(studentLogic.UpdateStudent(student));
+        }
+
+        [TestMethod()]
+        public void GetAllStudentsTest()
+        {
+            studentLogic.AddStudent(student);
+            int numberOfElements = 1;
+
+            Assert.AreEqual(numberOfElements, studentLogic.GetAllStudents().Count);
+        }
+
     }
 }
 
