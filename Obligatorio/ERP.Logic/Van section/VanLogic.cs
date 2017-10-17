@@ -28,10 +28,10 @@ namespace ERP.Logic
 
         public List<Van> GetAllVans()
         {
-            throw new NotImplementedException();
+            return dataBase.Vans;
         }
 
-        public int getAmountOfVans()
+        public int GetAmountOfVans()
         {
             throw new NotImplementedException();
         }
@@ -41,9 +41,9 @@ namespace ERP.Logic
             return dataBase.GetVan(aVan);
         }
 
-        public int getVanCapacity(Van aVan)
+        public int GetVanCapacity(Van aVan)
         {
-            throw new NotImplementedException();
+            return this.GetVan(aVan).Capacity;
         }
 
         public bool UpdateVan(Van aVan)

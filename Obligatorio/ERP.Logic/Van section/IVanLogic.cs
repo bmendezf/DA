@@ -14,7 +14,7 @@ namespace ERP.Logic
         bool UpdateVan(Van aVan);
         Van GetVan(Van aVan);
         List<Van> GetAllVans();
-        int getVanCapacity(Van aVan);
-        int getAmountOfVans();
+        int GetVanCapacity(Van aVan);
+        int GetAmountOfVans();
     }
 }

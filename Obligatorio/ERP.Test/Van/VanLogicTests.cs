@@ -88,30 +88,33 @@ namespace ERP.Test.Van
             Assert.AreEqual(numberOfElements, vanLogic.GetAllVans().Count);
         }
 
-        //[TestMethod()]
-        //public void getCapacityTest()
-        //{
-        //    van.Capacity = 15;
-        //    Logic.VanLogic.addVan(van);
-        //    int recivedCapacity = Logic.VanLogic.getCapacity(van);
+        [TestMethod()]
+        public void getCapacityTest()
+        {
+            van.Capacity = 15;
+            vanLogic.AddVan(van);
+            int recivedCapacity = vanLogic.GetVanCapacity(van);
 
-        //    Assert.AreEqual(15, recivedCapacity);
-        //}
+            Assert.AreEqual(15, recivedCapacity);
+        }
 
 
-        //[TestMethod()]
-        //public void getAmountTest()
-        //{
-        //    van2.LicensePlate = "a";
-        //    van3.LicensePlate = "b";
-        //    Logic.VanLogic.addVan(van);
-        //    Logic.VanLogic.addVan(van2);
-        //    Logic.VanLogic.addVan(van3);
-        //    List<Entities.Van.Van> vans = Logic.VanLogic.getAllVans();
-        //    int vansAmount = Logic.VanLogic.getAmount();
+        [TestMethod()]
+        public void getAmountTest()
+        {
+            ERP.Entities.Van.Van van2 = new ERP.Entities.Van.Van();
+            van2.LicensePlate = "a";
+            ERP.Entities.Van.Van van3 = new ERP.Entities.Van.Van();
+            van3.LicensePlate = "B";
 
-        //    Assert.AreEqual(3, vansAmount);
-        //}
+            vanLogic.AddVan(van);
+            vanLogic.AddVan(van2);
+            vanLogic.AddVan(van3);
+            List<Entities.Van.Van> vans = vanLogic.GetAllVans();
+            int vansAmount = vanLogic.GetAmountOfVans();
+
+            Assert.AreEqual(3, vansAmount);
+        }
 
     }
 }
