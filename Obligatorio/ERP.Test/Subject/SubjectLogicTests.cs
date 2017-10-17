@@ -66,7 +66,7 @@ namespace ERP.Logic.Tests
             sub.UpdateSubject(aSubject);
               
 
-            Assert.IsFalse(sub.UpdateSubject(aSubject));
+            Assert.IsTrue(sub.UpdateSubject(aSubject));
         }
 
         [TestMethod()]
@@ -153,7 +153,7 @@ namespace ERP.Logic.Tests
             sub.AddSubject(aSubject);
             Teacher aTeacher = new Teacher();
 
-            Assert.IsNotNull(sub.GetSubejctsByTeacher(aTeacher));
+            Assert.IsNotNull(sub.GetSubjectsByTeacher(aTeacher));
         }
     }
 }

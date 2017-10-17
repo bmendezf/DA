@@ -54,21 +54,179 @@ namespace ERP.Data
 
         public Student GetStudent(Student aStudent) { return null; }
 
-        public bool AddSubject(Subject sSubject) { return false; }
+        public bool AddSubject(Subject aSubject)
+        {
+            if (Subjects.Contains(aSubject))
+            {
+                return false;
+            }
+            else
+            {
+                Subjects.Add(aSubject);
+                return true;
+            }
+        }
 
-        public bool DeleteSubject(Subject sSubject) { return false; }
+        public bool DeleteSubject(Subject aSubject)
+        {
+            if (!Subjects.Contains(aSubject))
+            {
+                return false;
+            }
+            else
+            {
+                Subjects.Remove(aSubject);
+                return true;
+            }
+        }
 
-        public bool UpdateSubject(Subject sSubject) { return false; }
+        public bool UpdateSubject(Subject aSubject)
+        {
+            if (!Subjects.Contains(aSubject))
+            {
+                return false;
+            }
+            else
+            {
+                int index = Subjects.IndexOf(aSubject);
+                Subjects[index] = aSubject;
+                return true;
+            }
+        }
 
-        public Subject GetSubject(Subject sSubject) { return null; }
+        public Subject GetSubject(Subject aSubject)
+        {
+            if (!Subjects.Contains(aSubject))
+            {
+                return null;
+            }
+            else
+            {
+                int index = Subjects.IndexOf(aSubject);
+                return Subjects[index];
+            }
+        }
 
-        public bool AddTeacher(Teacher aTeacher) { return false; }
+        public bool AddTeacher(Teacher aTeacher)
+        {
+            if (Teachers.Contains(aTeacher))
+            {
+                return false;
+            }
+            else
+            {
+                Teachers.Add(aTeacher);
+                return true;
+            }
+        }
 
-        public bool DeleteTeacher(Teacher aStudent) { return false; }
+        public bool DeleteTeacher(Teacher aTeacher) {
+            if (!Teachers.Contains(aTeacher))
+            {
+                return false;
+            }
+            else
+            {
+                Teachers.Remove(aTeacher);
+                return true;
+            }
+        }
 
-        public bool UpdateTeacher(Teacher aStudent) { return false; }
+        public bool UpdateTeacher(Teacher aTeacher)
+        {
+            if (!Teachers.Contains(aTeacher))
+            {
+                return false;
+            }
+            else
+            {
+                int index = Teachers.IndexOf(aTeacher);
+                Teachers[index] = aTeacher;
+                return true;
+            }
+        }
 
-        public Teacher GetTeacher(Teacher aStudent) { return null; }
+        public Teacher GetTeacher(Teacher aTeacher)
+        {
+            if (!Teachers.Contains(aTeacher))
+            {
+                return null;
+            }
+            else
+            {
+                int index = Teachers.IndexOf(aTeacher);
+                return Teachers[index];
+            }
+        }
+
+        public List<Subject> GetAllSubjects()
+        {
+            return Subjects;
+        }
+        public List<Student> GetStudentsBySubject(Subject aSubject)
+        {
+            if (Subjects.Contains(aSubject))
+            {
+                return GetSubject(aSubject).Students;
+            }else
+            {
+                return null;
+            }
+        }
+
+        public List<Teacher> GetTeachersBySubject(Subject aSubject)
+        {
+            if (Subjects.Contains(aSubject))
+            {
+                return GetSubject(aSubject).Teachers;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public List<Subject> GetSubjectsByStudent(Student aStudent)
+        {
+            List<Subject> aList = null;
+            if (Students.Contains(aStudent))
+            {
+                foreach (Subject sub in Subjects)
+                {
+                    if (sub.Students.Contains(aStudent))
+                    {
+                        if (aList == null)
+                        {
+                            aList = new List<Subject>();
+                        }
+                        aList.Add(sub);
+                    }
+                }
+            }
+
+            return aList;
+        }
+
+        public List<Subject> GetSubjectsByTeacher(Teacher aTeacher)
+        {
+            List<Subject> aList = null;
+            if (Teachers.Contains(aTeacher))
+            {
+                foreach (Subject sub in Subjects)
+                {
+                    if (sub.Teachers.Contains(aTeacher))
+                    {
+                        if(aList == null)
+                        {
+                            aList = new List<Subject>();
+                        }
+                        aList.Add(sub);
+                    }
+                }
+            }
+
+            return aList;
+        }
 
         public bool AddVan(Van aVan) { return false; }
 

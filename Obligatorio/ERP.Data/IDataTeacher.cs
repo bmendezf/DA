@@ -13,10 +13,10 @@ namespace ERP.Data
         List<Teacher> Teachers { get; set; }
         bool AddTeacher(Teacher aTeacher);
 
-        bool DeleteTeacher(Teacher aStudent);
+        bool DeleteTeacher(Teacher aTeacher);
 
-        bool UpdateTeacher(Teacher aStudent);
+        bool UpdateTeacher(Teacher aTeacher);
 
-        Teacher GetTeacher(Teacher aStudent);
+        Teacher GetTeacher(Teacher aTeacher);
     }
 }
