@@ -38,16 +38,19 @@ namespace ERP.Test.Van
             Assert.IsFalse(vanLogic.AddVan(van)); 
         }
 
-        //[TestMethod()]
-        //public void DeleteVanTest()
-        //{
-        //    Logic.VanLogic.addVan(van);
-        //    Logic.VanLogic.deleteVan(van);
+        [TestMethod()]
+        public void DeleteVanTest()
+        {
+            vanLogic.AddVan(van);
 
-        //    List<Entities.Van.Van> vans = ERP.Logic.VanLogic.getAllVans();
+            Assert.IsTrue(vanLogic.DeleteVan(van));
+        }
 
-        //    Assert.AreEqual(vans.Count, 0);
-        //}
+        [TestMethod()]
+        public void DeleteVanFalseTest()
+        {
+            Assert.IsFalse(vanLogic.DeleteVan(van));
+        }
 
         //[TestMethod()]
         //public void updateVanTest()
