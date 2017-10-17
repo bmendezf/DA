@@ -33,7 +33,7 @@ namespace ERP.Logic
 
         public int GetAmountOfVans()
         {
-            throw new NotImplementedException();
+            return this.GetAllVans().Count;
         }
 
         public Van GetVan(Van aVan)
