@@ -43,6 +43,7 @@
             this.addStudentButton.TabIndex = 4;
             this.addStudentButton.Text = "Nueva Materia";
             this.addStudentButton.UseVisualStyleBackColor = false;
+            this.addStudentButton.Click += new System.EventHandler(this.addStudentButton_Click);
             // 
             // SubjectMenu
             // 

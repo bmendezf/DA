@@ -7,21 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ERP.UI.Teacher;
 
 namespace ERP.UI.Teacher
 {
-    public partial class AddTeacher: UserControl
+    public partial class EditTeacher : UserControl
     {
         public MainWindow mainWindow { get; set; }
-        public AddTeacher(MainWindow mainW)
+
+        public ERP.Entities.Teacher.Teacher aTeacher { get; set; }
+        public EditTeacher(MainWindow mainW, ERP.Entities.Teacher.Teacher aTea)
         {
             InitializeComponent();
             InitializeSubjects();
             this.mainWindow = mainW;
+            this.aTeacher = aTea;
         }
-
         private void InitializeSubjects()
-        { 
+        {
             if (mainWindow.Database.GetAllSubjects().Count != 0)
             {
                 MessageBox.Show("No hay alumnos");
@@ -32,11 +35,15 @@ namespace ERP.UI.Teacher
             foreach (ERP.Entities.Subject.Subject item in mainWindow.Database.GetAllSubjects())
             {
                 subjectsListBox.Items.Add(item);
+                if (this.aTeacher.Subjects.Contains(item))
+                {
+                    subjectsListBox.SelectedItems.Add(item);
+                }
             }
 
             subjectsListBox.SelectedIndex = subjectsListBox.Items.Count - 1;
-        
-    }
+
+        }
         private void cancelButton_Click(object sender, EventArgs e)
         {
             TeacherMain main = new TeacherMain(mainWindow);
@@ -45,10 +52,9 @@ namespace ERP.UI.Teacher
 
         private void addButton_Click(object sender, EventArgs e)
         {
-            ERP.Entities.Teacher.Teacher tea = new ERP.Entities.Teacher.Teacher();
-            tea.FirstName = firstNameBox.Text;
-            tea.LastName = lastNameBox.Text;
-            tea.Id = tea.Id;
+
+            this.aTeacher.FirstName = firstNameBox.Text;
+            this.aTeacher.LastName = lastNameBox.Text;
 
             List<ERP.Entities.Subject.Subject> listSubjects = new List<ERP.Entities.Subject.Subject>();
             foreach (ERP.Entities.Subject.Subject itemChecked in subjectsListBox)
@@ -56,10 +62,10 @@ namespace ERP.UI.Teacher
                 listSubjects.Add(mainWindow.subjectSection.GetSubject(itemChecked));
             }
 
-            
-           tea.Subjects = listSubjects;
 
-            bool successful = mainWindow.teacherSection.AddTeacher(tea);
+            this.aTeacher.Subjects = listSubjects;
+
+            bool successful = mainWindow.teacherSection.UpdateTeacher(this.aTeacher);
             if (successful)
             {
                 MessageBox.Show("Materia creada correctamente");

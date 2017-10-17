@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ERP.Entities;
 using ERP.Entities.Section;
+using ERP.Logic;
 using ERP.UI.Subject;
 using ERP.UI.Student;
 using ERP.UI.Van;
@@ -20,6 +21,14 @@ namespace ERP.UI
     public partial class MainWindow : Form
     {
         public Data.Data Database { get; set; }
+
+        public SubjectLogic subjectSection {get; set; }
+
+        public TeacherLogic teacherSection { get; set; }
+
+        public StudentLogic studentSection { get; set; }
+
+        public VanLogic vanSection { get; set; }
 
         public MainWindow()
         {
@@ -110,7 +119,9 @@ namespace ERP.UI
             mainPanel.Controls.Add(userControl);
         }
         public void ChangeMenuPanel(UserControl userControl)
+
         {
+            subMenuPanel.Controls.Clear();
             subMenuPanel.Controls.Add(userControl);
         }
     }

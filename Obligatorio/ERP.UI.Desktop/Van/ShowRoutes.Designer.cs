@@ -56,6 +56,7 @@
             this.cancelButton.TabIndex = 9;
             this.cancelButton.Text = "VOLVER";
             this.cancelButton.UseVisualStyleBackColor = false;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
             // ShowRoutes
             // 

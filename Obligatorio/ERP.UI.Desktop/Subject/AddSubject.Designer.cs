@@ -30,10 +30,10 @@
         {
             this.teachersBox = new System.Windows.Forms.CheckedListBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.codeBox = new System.Windows.Forms.TextBox();
             this.addButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.nameBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -60,12 +60,12 @@
             this.label6.Text = "DOCENTES QUE LA DICTAN";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // textBox2
+            // codeBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(125, 74);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(282, 27);
-            this.textBox2.TabIndex = 31;
+            this.codeBox.Location = new System.Drawing.Point(125, 74);
+            this.codeBox.Name = "codeBox";
+            this.codeBox.Size = new System.Drawing.Size(282, 27);
+            this.codeBox.TabIndex = 31;
             // 
             // addButton
             // 
@@ -93,13 +93,14 @@
             this.cancelButton.TabIndex = 29;
             this.cancelButton.Text = "CANCELAR";
             this.cancelButton.UseVisualStyleBackColor = false;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
-            // textBox1
+            // nameBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(125, 41);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(282, 27);
-            this.textBox1.TabIndex = 28;
+            this.nameBox.Location = new System.Drawing.Point(125, 41);
+            this.nameBox.Name = "nameBox";
+            this.nameBox.Size = new System.Drawing.Size(282, 27);
+            this.nameBox.TabIndex = 28;
             // 
             // label3
             // 
@@ -161,10 +162,10 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.teachersBox);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.codeBox);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.cancelButton);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.nameBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -182,10 +183,10 @@
 
         private System.Windows.Forms.CheckedListBox teachersBox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox codeBox;
         private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.Button cancelButton;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox nameBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

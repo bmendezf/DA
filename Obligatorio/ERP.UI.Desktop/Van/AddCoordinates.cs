@@ -18,6 +18,12 @@ namespace ERP.UI.Van
             InitializeComponent();
             this.mainWindow = mainW;
         }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            VanMain main = new VanMain(mainWindow);
+            mainWindow.ChangeMainPanel(main);
+        }
     }
     }
 

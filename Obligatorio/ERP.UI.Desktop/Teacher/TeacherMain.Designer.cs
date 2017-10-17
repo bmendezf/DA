@@ -33,8 +33,9 @@
             this.subjectsBox = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.editButton = new System.Windows.Forms.Button();
+            this.addButton = new System.Windows.Forms.Button();
             this.deleteButton = new System.Windows.Forms.Button();
+            this.editButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.vanDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,18 +86,19 @@
             this.label3.TabIndex = 15;
             this.label3.Text = "Listado de docentes";
             // 
-            // editButton
+            // addButton
             // 
-            this.editButton.BackColor = System.Drawing.Color.AliceBlue;
-            this.editButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.editButton.Font = new System.Drawing.Font("Calibri", 10F);
-            this.editButton.ForeColor = System.Drawing.Color.SteelBlue;
-            this.editButton.Location = new System.Drawing.Point(35, 381);
-            this.editButton.Name = "editButton";
-            this.editButton.Size = new System.Drawing.Size(82, 37);
-            this.editButton.TabIndex = 16;
-            this.editButton.Text = "EDITAR";
-            this.editButton.UseVisualStyleBackColor = false;
+            this.addButton.BackColor = System.Drawing.Color.AliceBlue;
+            this.addButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addButton.Font = new System.Drawing.Font("Calibri", 10F);
+            this.addButton.ForeColor = System.Drawing.Color.SteelBlue;
+            this.addButton.Location = new System.Drawing.Point(35, 381);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(82, 37);
+            this.addButton.TabIndex = 37;
+            this.addButton.Text = "NUEVO";
+            this.addButton.UseVisualStyleBackColor = false;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // deleteButton
             // 
@@ -104,17 +106,31 @@
             this.deleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteButton.Font = new System.Drawing.Font("Calibri", 10F);
             this.deleteButton.ForeColor = System.Drawing.Color.SteelBlue;
-            this.deleteButton.Location = new System.Drawing.Point(123, 381);
+            this.deleteButton.Location = new System.Drawing.Point(211, 381);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(82, 37);
-            this.deleteButton.TabIndex = 17;
+            this.deleteButton.TabIndex = 36;
             this.deleteButton.Text = "ELIMINAR";
             this.deleteButton.UseVisualStyleBackColor = false;
+            // 
+            // editButton
+            // 
+            this.editButton.BackColor = System.Drawing.Color.AliceBlue;
+            this.editButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.editButton.Font = new System.Drawing.Font("Calibri", 10F);
+            this.editButton.ForeColor = System.Drawing.Color.SteelBlue;
+            this.editButton.Location = new System.Drawing.Point(123, 381);
+            this.editButton.Name = "editButton";
+            this.editButton.Size = new System.Drawing.Size(82, 37);
+            this.editButton.TabIndex = 35;
+            this.editButton.Text = "EDITAR";
+            this.editButton.UseVisualStyleBackColor = false;
             // 
             // TeacherMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.addButton);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.editButton);
             this.Controls.Add(this.label3);
@@ -124,7 +140,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Calibri", 12F);
             this.ForeColor = System.Drawing.Color.SteelBlue;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TeacherMain";
             this.Size = new System.Drawing.Size(898, 531);
             ((System.ComponentModel.ISupportInitialize)(this.vanDataGrid)).EndInit();
@@ -140,7 +156,8 @@
         private System.Windows.Forms.ListBox subjectsBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button editButton;
+        private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.Button deleteButton;
+        private System.Windows.Forms.Button editButton;
     }
 }

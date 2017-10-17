@@ -33,9 +33,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.subjectsBox = new System.Windows.Forms.ListBox();
-            this.vanDataGrid = new System.Windows.Forms.DataGridView();
+            this.studentDataGrid = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.vanDataGrid)).BeginInit();
+            this.addButton = new System.Windows.Forms.Button();
+            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.studentNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.studentDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // deleteButton
@@ -44,12 +49,13 @@
             this.deleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteButton.Font = new System.Drawing.Font("Calibri", 10F);
             this.deleteButton.ForeColor = System.Drawing.Color.SteelBlue;
-            this.deleteButton.Location = new System.Drawing.Point(123, 381);
+            this.deleteButton.Location = new System.Drawing.Point(211, 381);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(82, 37);
             this.deleteButton.TabIndex = 33;
             this.deleteButton.Text = "ELIMINAR";
             this.deleteButton.UseVisualStyleBackColor = false;
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // editButton
             // 
@@ -57,12 +63,13 @@
             this.editButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.editButton.Font = new System.Drawing.Font("Calibri", 10F);
             this.editButton.ForeColor = System.Drawing.Color.SteelBlue;
-            this.editButton.Location = new System.Drawing.Point(35, 381);
+            this.editButton.Location = new System.Drawing.Point(123, 381);
             this.editButton.Name = "editButton";
             this.editButton.Size = new System.Drawing.Size(82, 37);
             this.editButton.TabIndex = 32;
             this.editButton.Text = "EDITAR";
             this.editButton.UseVisualStyleBackColor = false;
+            this.editButton.Click += new System.EventHandler(this.editButton_Click);
             // 
             // label3
             // 
@@ -91,13 +98,19 @@
             this.subjectsBox.Size = new System.Drawing.Size(320, 289);
             this.subjectsBox.TabIndex = 29;
             // 
-            // vanDataGrid
+            // studentDataGrid
             // 
-            this.vanDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.vanDataGrid.Location = new System.Drawing.Point(35, 64);
-            this.vanDataGrid.Name = "vanDataGrid";
-            this.vanDataGrid.Size = new System.Drawing.Size(487, 311);
-            this.vanDataGrid.TabIndex = 28;
+            this.studentDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.studentDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Name,
+            this.LastName,
+            this.studentNumber,
+            this.Id});
+            this.studentDataGrid.Location = new System.Drawing.Point(35, 64);
+            this.studentDataGrid.Name = "studentDataGrid";
+            this.studentDataGrid.Size = new System.Drawing.Size(487, 311);
+            this.studentDataGrid.TabIndex = 28;
+            this.studentDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.studentDataGrid_CellContentClick);
             // 
             // label1
             // 
@@ -111,24 +124,62 @@
             this.label1.Text = "VISUALIZACION DE ALUMNOS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // addButton
+            // 
+            this.addButton.BackColor = System.Drawing.Color.AliceBlue;
+            this.addButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addButton.Font = new System.Drawing.Font("Calibri", 10F);
+            this.addButton.ForeColor = System.Drawing.Color.SteelBlue;
+            this.addButton.Location = new System.Drawing.Point(35, 381);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(82, 37);
+            this.addButton.TabIndex = 34;
+            this.addButton.Text = "NUEVO";
+            this.addButton.UseVisualStyleBackColor = false;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
+            // 
+            // Name
+            // 
+            this.Name.HeaderText = "Nombre";
+            this.Name.Name = "Name";
+            this.Name.ReadOnly = true;
+            // 
+            // LastName
+            // 
+            this.LastName.HeaderText = "Apellido";
+            this.LastName.Name = "LastName";
+            this.LastName.ReadOnly = true;
+            // 
+            // studentNumber
+            // 
+            this.studentNumber.HeaderText = "#Estudiante";
+            this.studentNumber.Name = "studentNumber";
+            this.studentNumber.ReadOnly = true;
+            // 
+            // Id
+            // 
+            this.Id.HeaderText = "CI";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            // 
             // StudentMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.addButton);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.editButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.subjectsBox);
-            this.Controls.Add(this.vanDataGrid);
+            this.Controls.Add(this.studentDataGrid);
             this.Controls.Add(this.label1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Font = new System.Drawing.Font("Calibri", 12F);
             this.ForeColor = System.Drawing.Color.SteelBlue;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "StudentMain";
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Size = new System.Drawing.Size(898, 531);
-            ((System.ComponentModel.ISupportInitialize)(this.vanDataGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentDataGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -141,7 +192,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListBox subjectsBox;
-        private System.Windows.Forms.DataGridView vanDataGrid;
+        private System.Windows.Forms.DataGridView studentDataGrid;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button addButton;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LastName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn studentNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
     }
 }

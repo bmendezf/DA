@@ -18,5 +18,11 @@ namespace ERP.UI.Student
             InitializeComponent();
             this.mainWindow = mainW;
         }
+
+        private void addStudentButton_Click(object sender, EventArgs e)
+        {
+            AddStudent main = new AddStudent(mainWindow);
+            mainWindow.ChangeMainPanel(main);
+        }
     }
 }

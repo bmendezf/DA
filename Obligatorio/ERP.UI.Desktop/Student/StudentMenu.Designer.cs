@@ -43,6 +43,7 @@
             this.addStudentButton.TabIndex = 3;
             this.addStudentButton.Text = "Nuevo Alumno";
             this.addStudentButton.UseVisualStyleBackColor = false;
+            this.addStudentButton.Click += new System.EventHandler(this.addStudentButton_Click);
             // 
             // StudentMenu
             // 

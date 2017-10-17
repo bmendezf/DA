@@ -43,6 +43,7 @@
             this.addStudentButton.TabIndex = 5;
             this.addStudentButton.Text = "Nuevo Docente";
             this.addStudentButton.UseVisualStyleBackColor = false;
+            this.addStudentButton.Click += new System.EventHandler(this.addStudentButton_Click);
             // 
             // TeacherMenu
             // 
