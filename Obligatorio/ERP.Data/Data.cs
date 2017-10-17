@@ -7,11 +7,13 @@ using ERP.Entities.Student;
 using ERP.Entities.Subject;
 using ERP.Entities.Van;
 using ERP.Entities.Teacher;
+using ERP.Entities.Section;
 
 namespace ERP.Data
 {
     public class Data : IDataStudent, IDataSubject, IDataTeacher, IDataVan
     {
+        private List<Section> _Sections;
         private List<Student> _Students ;
         private List<Subject> _Subjects;
         private List<Teacher> _Teachers = new List<ERP.Entities.Teacher.Teacher>();
@@ -21,6 +23,15 @@ namespace ERP.Data
         {
             _Students = new List<Student>();
             _Subjects = new List<Subject>();
+            _Teachers = new List<Teacher>();
+            _Vans = new List<Van>();
+            _Sections = new List<Section>();
+        }
+
+        public List<Section> Sections
+        {
+            get { return _Sections; }
+            set { _Sections = value; }
         }
         public List<Student> Students
         {
@@ -46,6 +57,18 @@ namespace ERP.Data
             set { _Vans = value; }
         }
 
+        public bool AddSection(Section aSection)
+        {
+            if (Sections.Contains(aSection))
+            {
+                return false;
+            }
+            else
+            {
+                Sections.Add(aSection);
+                return true;
+            }
+        }
         public bool AddStudent(Student aStudent)
         {
             if (Students.Contains(aStudent))
