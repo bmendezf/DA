@@ -61,18 +61,18 @@ namespace ERP.Test.Student
             Assert.AreEqual(student,recivedStudent);
         }
 
-        //    [TestMethod()]
-        //    public void updateStudentTest()
-        //    {
-        //        student.Name = "bruno";
-        //        Logic.StudentLogic.addStudent(student);
-        //        student2.Name = "Juan";
-        //        student2.StudentNumber = student.StudentNumber;
-        //        Logic.StudentLogic.updateStudent(student2);
-        //        Entities.Student.Student updatedStudent = Logic.StudentLogic.getStudent(student);
+        [TestMethod()]
+        public void updateStudentTest()
+        {
+            student.Name = "bruno";
+            studentLogic.AddStudent(student);
+            Entities.Student.Student modifiedStudent = new Entities.Student.Student();
+            modifiedStudent.Name = "Juan";
+            modifiedStudent.StudentNumber = student.StudentNumber;
+            studentLogic.UpdateStudent(modifiedStudent);
 
-        //        Assert.AreEqual(updatedStudent.Name, student2.Name);
-        //    }
-        //}
+            Assert.AreEqual(modifiedStudent.Name, studentLogic.getStudent(student).Name);
+        }
     }
 }
+

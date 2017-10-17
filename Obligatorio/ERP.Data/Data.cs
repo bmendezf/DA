@@ -71,7 +71,18 @@ namespace ERP.Data
             }
         }
 
-        public bool UpdateStudent(Student aStudent) { return false; }
+        public bool UpdateStudent(Student aStudent) {
+            if (!Students.Contains(aStudent))
+            {
+                return false;
+            }
+            else
+            {
+                int index = Students.IndexOf(aStudent);
+                Students[index] = aStudent;
+                return true;
+            }
+        }
 
         public Student GetStudent(Student aStudent)
         {

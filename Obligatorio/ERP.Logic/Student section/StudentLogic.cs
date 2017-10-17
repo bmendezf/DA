@@ -38,46 +38,7 @@ namespace ERP.Logic
 
         public bool UpdateStudent(Student aStudent)
         {
-            throw new NotImplementedException();
+            return dataBase.UpdateStudent(aStudent);
         }
-
-        //public Entities.Student.Student getStudent(Entities.Student.Student aStudent)
-        //{
-        //    foreach (Entities.Student.Student student in ERP.Data.Data.Students)
-        //    {
-        //        if (student.Equals(aStudent))
-        //        {
-        //            return student;
-        //        }
-        //    }
-        //    return aStudent;
-        //}
-
-        //public List<Entities.Student.Student> getAllStudents()
-        //{
-        //    return Data.Data.Students;
-        //}
-
-        //public bool deleteStudent(Entities.Student.Student aStudent)
-        //{
-        //    if (ERP.Data.Data.Students.Contains(aStudent))
-        //    {
-        //        ERP.Data.Data.Students.Remove(aStudent);
-        //        return true;
-        //    }
-        //    return false;
-        //}
-
-        //public bool updateStudent(Entities.Student.Student aStudent)
-        //{
-        //    if (ERP.Data.Data.Students.Contains(aStudent))
-        //    {
-        //        ERP.Data.Data.Students.Remove(aStudent);
-        //        ERP.Data.Data.students.Add(aStudent);
-        //        return true;
-        //    }
-        //    return false;
-        //}
-
     }
 }
