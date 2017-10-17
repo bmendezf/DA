@@ -35,7 +35,7 @@ namespace ERP.Test.Student
         {
             studentLogic.AddStudent(student);
 
-            Assert.IsFalse(studentLogic.AddStudent(student)); ;
+            Assert.IsFalse(studentLogic.AddStudent(student));
         }
 
         [TestMethod()]

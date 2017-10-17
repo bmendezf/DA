@@ -49,7 +49,8 @@
     <Compile Include="Subject section\SubjectLogic.cs" />
     <Compile Include="Teacher section\ITeacherLogic.cs" />
     <Compile Include="Teacher section\TeacherLogic.cs" />
-    <Compile Include="VanLogic.cs" />
+    <Compile Include="Van section\IVanLogic.cs" />
+    <Compile Include="Van section\VanLogic.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ERP.Data\ERP.Data.csproj">

@@ -280,12 +280,55 @@ namespace ERP.Data
             return aList;
         }
 
-        public bool AddVan(Van aVan) { return false; }
+        public bool AddVan(Van aVan)
+        {
+            if (Vans.Contains(aVan))
+            {
+                return false;
+            }
+            else
+            {
+                Vans.Add(aVan);
+                return true;
+            }
+        }
 
-        public bool DeleteVan(Van aVan) { return false; }
+        public bool DeleteVan(Van aVan) {
+            if (Vans.Contains(aVan))
+            {
+                Vans.Remove(aVan);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
-        public bool UpdateVan(Van aVan) { return false; }
+        public bool UpdateVan(Van aVan)
+        {
+            if (!Vans.Contains(aVan))
+            {
+                return false;
+            }
+            else
+            {
+                int index = Vans.IndexOf(aVan);
+                Vans[index] = aVan;
+                return true;
+            }
+        }
 
-        public Van GetVan(Van aVan) { return null; }
+        public Van GetVan(Van aVan) {
+            if (!Vans.Contains(aVan))
+            {
+                return null;
+            }
+            else
+            {
+                int index = Vans.IndexOf(aVan);
+                return Vans[index];
+            }
+        }
     }
 }

@@ -2,6 +2,9 @@
 using System.Text;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using ERP.Entities.Van;
+using ERP.Data;
+using ERP.Logic;
 
 namespace ERP.Test.Van
 {
@@ -9,85 +12,109 @@ namespace ERP.Test.Van
     public class VanLogicTests
     {
 
-        //Entities.Van.Van van;
-        //Entities.Van.Van van2;
-        //Entities.Van.Van van3;
+        Entities.Van.Van van;
+        Data.Data aDatabase;
+        VanLogic vanLogic;
 
-        //[TestInitialize()]
-        //public void Initialize()
-        //{
-        //    van = new Entities.Van.Van();
-        //    van2 = new Entities.Van.Van();
-        //    van3 = new Entities.Van.Van();
-        //}
+        [TestInitialize()]
+        public void Initialize()
+        {
+            van = new Entities.Van.Van();
+            aDatabase = new Data.Data();
+            vanLogic = new VanLogic(aDatabase);
+        }
 
-        //[TestMethod()]
-        //public void AddVanTest()
-        //{
-        //    Logic.VanLogic.addVan(van);
-        //    Entities.Van.Van recivedVan = ERP.Logic.VanLogic.getVan(van);
+        [TestMethod()]
+        public void AddVanTrueTest()
+        {
+            Assert.IsTrue(vanLogic.AddVan(van));
+        }
 
-        //    Assert.AreEqual(van, recivedVan);
-        //}
+        [TestMethod()]
+        public void AddVanFalseTest()
+        {
+            vanLogic.AddVan(van);
 
-        //[TestMethod()]
-        //public void AddVanRepeatedTest()
-        //{
-        //    Logic.VanLogic.addVan(van);
-        //    Logic.VanLogic.addVan(van);
+            Assert.IsFalse(vanLogic.AddVan(van)); 
+        }
 
-        //    List<Entities.Van.Van> vans = ERP.Logic.VanLogic.getAllVans();
+        [TestMethod()]
+        public void DeleteVanTest()
+        {
+            vanLogic.AddVan(van);
 
-        //    Assert.AreEqual(vans.Count, 1);
-        //}
+            Assert.IsTrue(vanLogic.DeleteVan(van));
+        }
 
-        //[TestMethod()]
-        //public void DeleteVanTest()
-        //{
-        //    Logic.VanLogic.addVan(van);
-        //    Logic.VanLogic.deleteVan(van);
+        [TestMethod()]
+        public void DeleteVanFalseTest()
+        {
+            Assert.IsFalse(vanLogic.DeleteVan(van));
+        }
 
-        //    List<Entities.Van.Van> vans = ERP.Logic.VanLogic.getAllVans();
+        [TestMethod()]
+        public void GetVanTest()
+        {
+            vanLogic.AddVan(van);
+            Entities.Van.Van recivedVan = vanLogic.GetVan(van);
 
-        //    Assert.AreEqual(vans.Count, 0);
-        //}
+            Assert.AreEqual(van, recivedVan);
+        }
 
-        //[TestMethod()]
-        //public void updateVanTest()
-        //{
-        //    van.Capacity = 10;
-        //    Logic.VanLogic.addVan(van);
-        //    van2.Capacity = 15;
-        //    Logic.VanLogic.updateVan(van2);
-        //    Entities.Van.Van updatedVan = Logic.VanLogic.getVan(van);
+        [TestMethod()]
+        public void updateVanTest()
+        {
+            van.Capacity = 12;
+            vanLogic.AddVan(van);
+            Entities.Van.Van modifiedVan = new Entities.Van.Van();
+            modifiedVan.Capacity = 16;
+            vanLogic.UpdateVan(modifiedVan);
 
-        //    Assert.AreEqual(updatedVan.Capacity, van2.Capacity);
-        //}
+            Assert.AreEqual(modifiedVan.Capacity, vanLogic.GetVan(van).Capacity);
+        }
 
-        //[TestMethod()]
-        //public void getCapacityTest()
-        //{
-        //    van.Capacity = 15;
-        //    Logic.VanLogic.addVan(van);
-        //    int recivedCapacity = Logic.VanLogic.getCapacity(van);
+        [TestMethod()]
+        public void updateVanFalseTest()
+        {
+            Assert.IsFalse(vanLogic.UpdateVan(van));
+        }
 
-        //    Assert.AreEqual(15, recivedCapacity);
-        //}
+        [TestMethod()]
+        public void GetAllVansTest()
+        {
+            vanLogic.AddVan(van);
+            int numberOfElements = 1;
+
+            Assert.AreEqual(numberOfElements, vanLogic.GetAllVans().Count);
+        }
+
+        [TestMethod()]
+        public void getCapacityTest()
+        {
+            van.Capacity = 15;
+            vanLogic.AddVan(van);
+            int recivedCapacity = vanLogic.GetVanCapacity(van);
+
+            Assert.AreEqual(15, recivedCapacity);
+        }
 
 
-        //[TestMethod()]
-        //public void getAmountTest()
-        //{
-        //    van2.LicensePlate = "a";
-        //    van3.LicensePlate = "b";
-        //    Logic.VanLogic.addVan(van);
-        //    Logic.VanLogic.addVan(van2);
-        //    Logic.VanLogic.addVan(van3);
-        //    List<Entities.Van.Van> vans = Logic.VanLogic.getAllVans();
-        //    int vansAmount = Logic.VanLogic.getAmount();
+        [TestMethod()]
+        public void getAmountTest()
+        {
+            ERP.Entities.Van.Van van2 = new ERP.Entities.Van.Van();
+            van2.LicensePlate = "a";
+            ERP.Entities.Van.Van van3 = new ERP.Entities.Van.Van();
+            van3.LicensePlate = "B";
 
-        //    Assert.AreEqual(3, vansAmount);
-        //}
+            vanLogic.AddVan(van);
+            vanLogic.AddVan(van2);
+            vanLogic.AddVan(van3);
+            List<Entities.Van.Van> vans = vanLogic.GetAllVans();
+            int vansAmount = vanLogic.GetAmountOfVans();
+
+            Assert.AreEqual(3, vansAmount);
+        }
 
     }
 }
