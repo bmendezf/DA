@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ERP.Entities.Van;
+using ERP.Entities.Validators.Van;
 
 namespace ERP.Logic
 {
@@ -18,7 +19,13 @@ namespace ERP.Logic
 
         public bool AddVan(Van aVan)
         {
-            return dataBase.AddVan(aVan);
+            if (VanValidator.LicensePlateValidator(aVan.LicensePlate)) {
+                return dataBase.AddVan(aVan);
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public bool DeleteVan(Van aVan)

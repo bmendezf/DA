@@ -20,6 +20,7 @@ namespace ERP.Test.Van
         public void Initialize()
         {
             van = new Entities.Van.Van();
+            van.LicensePlate = "abc1234";
             aDatabase = new Data.Data();
             vanLogic = new VanLogic(aDatabase);
         }
@@ -67,6 +68,7 @@ namespace ERP.Test.Van
             van.Capacity = 12;
             vanLogic.AddVan(van);
             Entities.Van.Van modifiedVan = new Entities.Van.Van();
+            modifiedVan.LicensePlate="abc1234";
             modifiedVan.Capacity = 16;
             vanLogic.UpdateVan(modifiedVan);
 
