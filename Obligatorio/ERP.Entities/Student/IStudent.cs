@@ -8,5 +8,10 @@ namespace ERP.Entities.Student
 {
     interface IStudent
     {
+        string Name { get; set; }
+        string LastName { get; set; }
+        int CI { get; set; }
+        int StudentNumber { get; set; }
+        Coordinate Coordinates { get; set; }
     }
 }

@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace ERP.Entities.Teacher
 {
-    class ITeacher
+    public class ITeacher
     {
+        string FirstName { get; set; }
+        string LastName { get; set; }
+        List<Subject.Subject> Subjects { get; set; }
+        string Id { get; set; }
     }
 }

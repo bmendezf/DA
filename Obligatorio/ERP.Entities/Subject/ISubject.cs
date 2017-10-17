@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace ERP.Entities.Subject
 {
-    interface ISubject
+     interface ISubject
     {
+        string Name { get; set; }
+
+        string Code { get; set; }
+
+        List<Student.Student> Students { get; set; }
+
+        List<Teacher.Teacher> Teachers { get; set; }
+
     }
 }

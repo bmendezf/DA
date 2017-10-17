@@ -8,5 +8,7 @@ namespace ERP.Entities.Van
 {
     interface IVan
     {
+        int Capacity { get; set; }
+        string LicensePlate { get; set; }
     }
 }

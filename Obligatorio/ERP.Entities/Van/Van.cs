@@ -8,13 +8,13 @@ namespace ERP.Entities.Van
 {
     public class Van
     {
-        public int Capacity { get; set; }
-        public string LicensePlate { get; set; }
+        private int _Capacity { get; set; }
+        private string _LicensePlate { get; set; }
 
         public Van()
         {
-            Capacity = 0;
-            LicensePlate = "";
+            _Capacity = 0;
+            _LicensePlate = "";
         }
 
         public override bool Equals(object obj)
@@ -25,7 +25,18 @@ namespace ERP.Entities.Van
             {
                 return false;
             }
-            return this.LicensePlate == aVan.LicensePlate;
+            return this._LicensePlate == aVan._LicensePlate;
+        }
+
+        public int Capacity
+        {
+            get { return _Capacity; }
+            set { _Capacity = value; }
+        }
+        public string LicensePlate
+        {
+            get { return _LicensePlate; }
+            set { _LicensePlate = value; }
         }
     }
 }

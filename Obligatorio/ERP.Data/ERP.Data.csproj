@@ -46,6 +46,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data.cs" />
+    <Compile Include="IDataStudent.cs" />
+    <Compile Include="IDataSubject.cs" />
+    <Compile Include="IDataTeacher.cs" />
+    <Compile Include="IDataVan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
