@@ -17,7 +17,7 @@ namespace ERP.Data
 
         bool UpdateSubject(Subject sSubject);
 
-        bool GetSubject(Subject sSubject);
+        Subject GetSubject(Subject sSubject);
 
 
 
