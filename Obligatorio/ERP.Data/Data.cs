@@ -159,6 +159,10 @@ namespace ERP.Data
             }
         }
 
+        public List<Teacher> GetAllTeachers()
+        {
+            return Teachers;
+        }
         public List<Subject> GetAllSubjects()
         {
             return Subjects;
