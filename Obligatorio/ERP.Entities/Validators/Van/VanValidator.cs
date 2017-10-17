@@ -4,19 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
 namespace ERP.Entities.Validators.Van
 {
-    class VanValidator
+    public class VanValidator
     {
-        //public bool correctLicensePlate(String aLicensePlate)
-        //{
-        //    if(aLicensePlate.Length == 8)
-        //    {
-        //        a
-        //        Regex.Replace(strIn, "[^\w\.@-]", "")
-        //        aLicensePlate.
-        //    }
-        //}
+        public static bool LicensePlateValidator(String aLicensePlate)
+        {
+            if (aLicensePlate.Length == 7)
+            {
+                
+                Regex r = new Regex(@"^[a-z A-Z 0-9]+$", RegexOptions.IgnoreCase);
+                return r.IsMatch(aLicensePlate);
+
+            }
+            else
+            {
+                return false;
+            }
+
+        }
     }
 }
