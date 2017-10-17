@@ -51,9 +51,9 @@ namespace ERP.Entities.Student.Tests
         [TestMethod()]
         public void CITest()
         {
-            student.CI = 12345678;
+            student.CI = "1234567-8";
 
-            Assert.AreEqual(student.CI, 12345678);
+            Assert.AreEqual(student.CI, "1234567-8");
         }
 
         [TestMethod()]

@@ -23,7 +23,7 @@ namespace ERP.Entities.Student
         private static int _NextStudentNumber = 0;
         public string _Name { get; set; }
         public string _LastName { get; set; }
-        public int _CI { get; set; }
+        public string _CI { get; set; }
         public int _StudentNumber { get; set; }
         public Coordinate _Coordinates { get; set; }
         
@@ -32,7 +32,7 @@ namespace ERP.Entities.Student
         {
             _Name = "";
             _LastName = "";
-            _CI = 0;
+            _CI = "";
             _StudentNumber = _NextStudentNumber;
             _Coordinates = new Coordinate(0, 0);
             _NextStudentNumber++;
@@ -59,7 +59,7 @@ namespace ERP.Entities.Student
             get { return _LastName; }
             set { _LastName = value; }
         }
-        public int CI
+        public string CI
         {
             get { return _CI; }
             set { _CI = value; }

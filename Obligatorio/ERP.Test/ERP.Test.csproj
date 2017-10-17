@@ -55,6 +55,7 @@
     <Compile Include="DataTests.cs" />
     <Compile Include="Student\StudentLogicTest.cs" />
     <Compile Include="Student\StudentTests.cs" />
+    <Compile Include="Student\StudentValidatorTest.cs" />
     <Compile Include="Subject\SubjectLogicTests.cs" />
     <Compile Include="Subject\SubjectTests.cs" />
     <Compile Include="Teacher\TeacherLogicTests.cs" />

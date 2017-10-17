@@ -10,7 +10,7 @@ namespace ERP.Entities.Student
     {
         string Name { get; set; }
         string LastName { get; set; }
-        int CI { get; set; }
+        string CI { get; set; }
         int StudentNumber { get; set; }
         Coordinate Coordinates { get; set; }
     }
