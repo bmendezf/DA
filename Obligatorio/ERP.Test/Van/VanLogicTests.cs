@@ -79,6 +79,15 @@ namespace ERP.Test.Van
             Assert.IsFalse(vanLogic.UpdateVan(van));
         }
 
+        [TestMethod()]
+        public void GetAllVansTest()
+        {
+            vanLogic.AddVan(van);
+            int numberOfElements = 1;
+
+            Assert.AreEqual(numberOfElements, vanLogic.GetAllVans().Count);
+        }
+
         //[TestMethod()]
         //public void getCapacityTest()
         //{
