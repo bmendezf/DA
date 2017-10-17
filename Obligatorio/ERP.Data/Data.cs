@@ -46,13 +46,61 @@ namespace ERP.Data
             set { _Vans = value; }
         }
 
-        public bool AddStudent(Student aStudent) { return false; }
+        public bool AddStudent(Student aStudent)
+        {
+            if (Students.Contains(aStudent))
+            {
+                return false;
+            }
+            else
+            {
+                Students.Add(aStudent);
+                return true;
+            }
+        }
 
-        public bool DeleteStudent(Student aStudent) { return false; }
+        public bool DeleteStudent(Student aStudent) {
+            if (Students.Contains(aStudent))
+            {
+                Students.Remove(aStudent);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
-        public bool UpdateStudent(Student aStudent) { return false; }
+        public bool UpdateStudent(Student aStudent) {
+            if (!Students.Contains(aStudent))
+            {
+                return false;
+            }
+            else
+            {
+                int index = Students.IndexOf(aStudent);
+                Students[index] = aStudent;
+                return true;
+            }
+        }
 
-        public Student GetStudent(Student aStudent) { return null; }
+        public Student GetStudent(Student aStudent)
+        {
+            if (!Students.Contains(aStudent))
+            {
+                return null;
+            }
+            else
+            {
+                int index = Students.IndexOf(aStudent);
+                return Students[index];
+            }
+        }
+
+        public List<Student> GetAllStudents()
+        {
+            return Students;
+        }
 
         public bool AddSubject(Subject aSubject)
         {

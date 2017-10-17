@@ -19,7 +19,7 @@ namespace ERP.Data.Tests
         public void StudentsNotNullTest()
         {
             Data someData = new Data();
-
+            
             Assert.IsNotNull(someData.Students);
         }
 

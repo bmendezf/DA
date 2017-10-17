@@ -20,7 +20,7 @@ namespace ERP.Entities.Student
 
     public class Student: IStudent
     {
-        private int _NextStudentNumber = 0;
+        private static int _NextStudentNumber = 0;
         public string _Name { get; set; }
         public string _LastName { get; set; }
         public int _CI { get; set; }

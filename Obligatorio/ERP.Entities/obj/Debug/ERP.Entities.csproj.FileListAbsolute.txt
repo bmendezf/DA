@@ -3,12 +3,6 @@ c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.E
 c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Entities\bin\Debug\ERP.Entities.pdb
 c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Entities\obj\Debug\ERP.Entities.exe
 c:\users\bruno\onedrive\documentos\visual studio 2015\Projects\Obligatorio\ERP.Entities\obj\Debug\ERP.Entities.pdb
-C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Entities\bin\Debug\ERP.Entities.exe.config
-C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Entities\bin\Debug\ERP.Entities.exe
-C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Entities\bin\Debug\ERP.Entities.pdb
-C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Entities\obj\Debug\ERP.Entities.csprojResolveAssemblyReference.cache
-C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Entities\obj\Debug\ERP.Entities.exe
-C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Entities\obj\Debug\ERP.Entities.pdb
 D:\st\da\Obligatorio\ERP.Entities\bin\Debug\ERP.Entities.dll.config
 D:\st\da\Obligatorio\ERP.Entities\bin\Debug\ERP.Entities.dll
 D:\st\da\Obligatorio\ERP.Entities\bin\Debug\ERP.Entities.pdb
@@ -20,3 +14,9 @@ C:\Users\User\Documents\DA\Obligatorio\ERP.Entities\bin\Debug\ERP.Entities.pdb
 C:\Users\User\Documents\DA\Obligatorio\ERP.Entities\obj\Debug\ERP.Entities.csprojResolveAssemblyReference.cache
 C:\Users\User\Documents\DA\Obligatorio\ERP.Entities\obj\Debug\ERP.Entities.dll
 C:\Users\User\Documents\DA\Obligatorio\ERP.Entities\obj\Debug\ERP.Entities.pdb
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Entities\bin\Debug\ERP.Entities.dll.config
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Entities\bin\Debug\ERP.Entities.dll
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Entities\bin\Debug\ERP.Entities.pdb
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Entities\obj\Debug\ERP.Entities.csprojResolveAssemblyReference.cache
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Entities\obj\Debug\ERP.Entities.dll
+C:\Users\bruno\OneDrive\Documentos\DA\Obligatorio\ERP.Entities\obj\Debug\ERP.Entities.pdb

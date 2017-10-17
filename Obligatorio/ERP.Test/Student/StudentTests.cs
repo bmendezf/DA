@@ -65,6 +65,7 @@ namespace ERP.Entities.Student.Tests
         [TestMethod()]
         public void StudentNotSameNumberTest()
         {
+            student = new Student();
             Student student2 = new Student();
 
             Assert.AreNotEqual(student.StudentNumber, student2.StudentNumber);

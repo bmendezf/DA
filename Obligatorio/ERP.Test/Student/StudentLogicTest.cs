@@ -2,66 +2,93 @@
 using System.Text;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using ERP.Entities.Student;
+using ERP.Data;
+using ERP.Logic;
 
 namespace ERP.Test.Student
 {
-   
+
     [TestClass]
     public class StudentLogicTest
     {
         Entities.Student.Student student;
-        Entities.Student.Student student2;
+        Data.Data aDatabase;
+        StudentLogic studentLogic;
 
         [TestInitialize()]
         public void Initialize()
         {
             student = new Entities.Student.Student();
-            student2 = new Entities.Student.Student();
+            aDatabase = new Data.Data();
+            studentLogic = new StudentLogic(aDatabase);
         }
 
         [TestMethod()]
-        public void AddStudentTest()
+        public void AddStudentTrueTest()
         {
-            Logic.StudentLogic.addStudent(student);
-            Entities.Student.Student recivedStudent = ERP.Logic.StudentLogic.getStudent(student);
-         
-            Assert.AreEqual(student, recivedStudent);
+            Assert.IsTrue(studentLogic.AddStudent(student));
         }
 
         [TestMethod()]
-        public void AddStudentRepeatedTest()
+        public void AddStudentFalseTest()
         {
-            Logic.StudentLogic.addStudent(student);
-            Logic.StudentLogic.addStudent(student);
+            studentLogic.AddStudent(student);
 
-            List<Entities.Student.Student> students = ERP.Logic.StudentLogic.getAllStudents();
-
-            Assert.AreEqual(students.Count, 1);
+            Assert.IsFalse(studentLogic.AddStudent(student)); ;
         }
 
         [TestMethod()]
         public void DeleteStudentTest()
         {
-            
-            Logic.StudentLogic.addStudent(student);
-            Logic.StudentLogic.deleteStudent(student);
+            studentLogic.AddStudent(student);
+           
+            Assert.IsTrue(studentLogic.DeleteStudent(student));
+        }
 
-            List<Entities.Student.Student> students = ERP.Logic.StudentLogic.getAllStudents();
+        [TestMethod()]
+        public void DeleteStudentFalseTest()
+        {
+            Assert.IsFalse(studentLogic.DeleteStudent(student));
+        }
 
-            Assert.AreEqual(students.Count, 0);
+        [TestMethod()]
+        public void GetStudentTest()
+        {
+            studentLogic.AddStudent(student);
+            Entities.Student.Student recivedStudent = studentLogic.getStudent(student);
+
+            Assert.AreEqual(student,recivedStudent);
         }
 
         [TestMethod()]
         public void updateStudentTest()
         {
             student.Name = "bruno";
-            Logic.StudentLogic.addStudent(student);
-            student2.Name = "Juan";
-            student2.StudentNumber = student.StudentNumber;
-            Logic.StudentLogic.updateStudent(student2);
-            Entities.Student.Student updatedStudent = Logic.StudentLogic.getStudent(student);
+            studentLogic.AddStudent(student);
+            Entities.Student.Student modifiedStudent = new Entities.Student.Student();
+            modifiedStudent.Name = "Juan";
+            modifiedStudent.StudentNumber = student.StudentNumber;
+            studentLogic.UpdateStudent(modifiedStudent);
 
-            Assert.AreEqual(updatedStudent.Name, student2.Name);
+            Assert.AreEqual(modifiedStudent.Name, studentLogic.getStudent(student).Name);
         }
+
+        [TestMethod()]
+        public void updateStudentFalseTest()
+        {
+            Assert.IsFalse(studentLogic.UpdateStudent(student));
+        }
+
+        [TestMethod()]
+        public void GetAllStudentsTest()
+        {
+            studentLogic.AddStudent(student);
+            int numberOfElements = 1;
+
+            Assert.AreEqual(numberOfElements, studentLogic.GetAllStudents().Count);
+        }
+
     }
 }
+
