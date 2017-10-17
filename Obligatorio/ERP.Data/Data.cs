@@ -6,11 +6,41 @@ using System.Threading.Tasks;
 
 namespace ERP.Data
 {
-    public class Data
+    public class Data : IData
     {
-        public static List<ERP.Entities.Student.Student> students = new List<ERP.Entities.Student.Student>();
-        public static List<ERP.Entities.Subject.Subject> subjects = new List<ERP.Entities.Subject.Subject>();
-        public static List<ERP.Entities.Teacher.Teacher> teachers = new List<ERP.Entities.Teacher.Teacher>();
-        public static List<ERP.Entities.Van.Van> vans = new List<ERP.Entities.Van.Van>();
+        private List<ERP.Entities.Student.Student> _Students ;
+        private List<ERP.Entities.Subject.Subject> _Subjects;
+        private List<ERP.Entities.Teacher.Teacher> _Teachers = new List<ERP.Entities.Teacher.Teacher>();
+        private List<ERP.Entities.Van.Van> _Vans = new List<ERP.Entities.Van.Van>();
+
+        public Data()
+        {
+            _Students = new List<ERP.Entities.Student.Student>();
+            _Subjects = new List<ERP.Entities.Subject.Subject>();
+        }
+        public List<ERP.Entities.Student.Student> Students
+        {
+            get { return _Students; }
+            set { _Students = value; }
+        }
+
+        public List<ERP.Entities.Subject.Subject> Subjects
+        {
+            get { return _Subjects; }
+            set { _Subjects = value; }
+        }
+
+        public List<ERP.Entities.Teacher.Teacher> Teachers
+        {
+            get { return _Teachers; }
+            set { _Teachers = value; }
+        }
+
+        public List<ERP.Entities.Van.Van> Vans
+        {
+            get { return _Vans; }
+            set { _Vans = value; }
+        }
+
     }
 }

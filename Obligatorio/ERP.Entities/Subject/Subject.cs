@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace ERP.Entities.Subject
 {
-    public class Subject
+    public class Subject: ISubject
     {
-        public string Name;
+        private string _Name;
 
-        public string Code;
+        private string _Code;
 
-        public List<Student.Student> Students;
+        private List<Student.Student> _Students;
 
-        public List<Teacher.Teacher> Teachers;
+        private List<Teacher.Teacher> _Teachers;
 
         public Subject()
         {
-            this.Name = "";
-            this.Code = "";
-            this.Students = new List<Student.Student>();
-            this.Teachers = new List<Teacher.Teacher>();
+            _Name = "";
+            _Code = "";
+            _Students = new List<Student.Student>();
+            _Teachers = new List<Teacher.Teacher>();
 
         }
 
@@ -29,7 +29,28 @@ namespace ERP.Entities.Subject
         {
             var item = obj as Subject;
             if (item == null) return false;
-            return this.Code.Equals(item.Code);
+            return this._Code.Equals(item._Code);
+        }
+
+        public string Name
+        {
+            get { return _Name; }
+            set { _Name = value; }
+        }
+        public string Code
+        {
+            get { return _Code; }
+            set { _Code = value; }
+        }
+        public List<ERP.Entities.Student.Student> Students
+        {
+            get { return _Students; }
+            set { _Students = value; }
+        }
+        public List<ERP.Entities.Teacher.Teacher> Teachers
+        {
+            get { return _Teachers; }
+            set { _Teachers = value; }
         }
     }
 }
