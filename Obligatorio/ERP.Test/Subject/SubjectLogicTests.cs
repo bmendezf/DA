@@ -31,7 +31,7 @@ namespace ERP.Logic.Tests
         {
             SubjectLogic sub = new SubjectLogic(aDatabase);
             Subject aSubject = new Subject();
-            aDatabase.AddSubject(aSubject);
+            sub.AddSubject(aSubject);
 
             Assert.IsFalse(sub.AddSubject(aSubject));
         }
@@ -42,7 +42,7 @@ namespace ERP.Logic.Tests
         {
             SubjectLogic sub = new SubjectLogic(aDatabase);
             Subject aSubject = new Subject();
-            aDatabase.AddSubject(aSubject);
+            sub.AddSubject(aSubject);
 
             Assert.IsTrue(sub.DeleteSubject(aSubject));
         }
@@ -61,9 +61,9 @@ namespace ERP.Logic.Tests
         {
             SubjectLogic sub = new SubjectLogic(aDatabase);
             Subject aSubject = new Subject();
-            aDatabase.AddSubject(aSubject);
+            sub.AddSubject(aSubject);
             aSubject.Name = "BASE DE DATOS";
-            aDatabase.UpdateSubject(aSubject);
+            sub.UpdateSubject(aSubject);
               
 
             Assert.IsFalse(sub.UpdateSubject(aSubject));
@@ -74,7 +74,7 @@ namespace ERP.Logic.Tests
         {
             SubjectLogic sub = new SubjectLogic(aDatabase);
             Subject aSubject = new Subject();
-            aDatabase.UpdateSubject(aSubject);
+            sub.UpdateSubject(aSubject);
                 
 
             Assert.IsFalse(sub.UpdateSubject(aSubject));
@@ -85,7 +85,7 @@ namespace ERP.Logic.Tests
         {
             SubjectLogic sub = new SubjectLogic(aDatabase);
             Subject aSubject = new Subject();
-            aDatabase.AddSubject(aSubject);
+            sub.AddSubject(aSubject);
 
 
             Assert.IsNotNull(sub.GetSubject(aSubject));
@@ -106,7 +106,7 @@ namespace ERP.Logic.Tests
         {
             SubjectLogic sub = new SubjectLogic(aDatabase);
             Subject aSubject = new Subject();
-            aDatabase.AddSubject(aSubject);
+            sub.AddSubject(aSubject);
 
 
             Assert.IsNotNull(sub.GetAllSubjects());
@@ -117,7 +117,7 @@ namespace ERP.Logic.Tests
         {
             SubjectLogic sub = new SubjectLogic(aDatabase);
             Subject aSubject = new Subject();
-            aDatabase.AddSubject(aSubject);
+            sub.AddSubject(aSubject);
 
 
             Assert.IsNotNull(sub.GetStudentsBySubject(aSubject));
@@ -127,7 +127,7 @@ namespace ERP.Logic.Tests
         {
             SubjectLogic sub = new SubjectLogic(aDatabase);
             Subject aSubject = new Subject();
-            aDatabase.AddSubject(aSubject);
+            sub.AddSubject(aSubject);
 
 
             Assert.IsNotNull(sub.GetTeachersBySubject(aSubject));
@@ -138,7 +138,7 @@ namespace ERP.Logic.Tests
         {
             SubjectLogic sub = new SubjectLogic(aDatabase);
             Subject aSubject = new Subject();
-            aDatabase.AddSubject(aSubject);
+            sub.AddSubject(aSubject);
             Student aStudent = new Student();
 
 
@@ -150,7 +150,7 @@ namespace ERP.Logic.Tests
         {
             SubjectLogic sub = new SubjectLogic(aDatabase);
             Subject aSubject = new Subject();
-            aDatabase.AddSubject(aSubject);
+            sub.AddSubject(aSubject);
             Teacher aTeacher = new Teacher();
 
             Assert.IsNotNull(sub.GetSubejctsByTeacher(aTeacher));

@@ -21,7 +21,5 @@ namespace ERP.Logic
         List<Subject> GetAllSubjects();
         List<Student> GetStudentsBySubject(Subject aSubject);
         List<Teacher> GetTeachersBySubject(Subject aSubject);
-        List<Subject> GetSubjectsByStudent(Student aStudent);
-        List<Teacher> GetSubejctsByTeacher(Teacher aTeacher);
     }
 }

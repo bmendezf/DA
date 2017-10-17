@@ -11,7 +11,7 @@ using ERP.Entities.Teacher;
 
 namespace ERP.Logic
 {
-    public class SubjectLogic: ISubjectLogic
+    public class SubjectLogic: ISubjectLogic, ISubjectForTeacher, ISubjectForStudent
     {
         private Data.Data database;
         
