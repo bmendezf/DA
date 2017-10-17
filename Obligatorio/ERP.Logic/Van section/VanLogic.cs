@@ -38,7 +38,7 @@ namespace ERP.Logic
 
         public Van GetVan(Van aVan)
         {
-            throw new NotImplementedException();
+            return dataBase.GetVan(aVan);
         }
 
         public int getVanCapacity(Van aVan)

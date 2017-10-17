@@ -307,6 +307,16 @@ namespace ERP.Data
 
         public bool UpdateVan(Van aVan) { return false; }
 
-        public Van GetVan(Van aVan) { return null; }
+        public Van GetVan(Van aVan) {
+            if (!Vans.Contains(aVan))
+            {
+                return null;
+            }
+            else
+            {
+                int index = Vans.IndexOf(aVan);
+                return Vans[index];
+            }
+        }
     }
 }

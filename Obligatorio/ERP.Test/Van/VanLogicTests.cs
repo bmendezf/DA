@@ -56,7 +56,7 @@ namespace ERP.Test.Van
         public void GetVanTest()
         {
             vanLogic.AddVan(van);
-            Entities.Van.Van recivedVan = vanLogic.getVan(van);
+            Entities.Van.Van recivedVan = vanLogic.GetVan(van);
 
             Assert.AreEqual(van, recivedVan);
         }
