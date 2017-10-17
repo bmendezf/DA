@@ -280,7 +280,18 @@ namespace ERP.Data
             return aList;
         }
 
-        public bool AddVan(Van aVan) { return false; }
+        public bool AddVan(Van aVan)
+        {
+            if (Vans.Contains(aVan))
+            {
+                return false;
+            }
+            else
+            {
+                Vans.Add(aVan);
+                return true;
+            }
+        }
 
         public bool DeleteVan(Van aVan) { return false; }
 

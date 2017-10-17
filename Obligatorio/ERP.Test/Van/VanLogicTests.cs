@@ -2,6 +2,9 @@
 using System.Text;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using ERP.Entities.Van;
+using ERP.Data;
+using ERP.Logic;
 
 namespace ERP.Test.Van
 {
@@ -9,37 +12,31 @@ namespace ERP.Test.Van
     public class VanLogicTests
     {
 
-        //Entities.Van.Van van;
-        //Entities.Van.Van van2;
-        //Entities.Van.Van van3;
+        Entities.Van.Van van;
+        Data.Data aDatabase;
+        VanLogic vanLogic;
 
-        //[TestInitialize()]
-        //public void Initialize()
-        //{
-        //    van = new Entities.Van.Van();
-        //    van2 = new Entities.Van.Van();
-        //    van3 = new Entities.Van.Van();
-        //}
+        [TestInitialize()]
+        public void Initialize()
+        {
+            van = new Entities.Van.Van();
+            aDatabase = new Data.Data();
+            vanLogic = new VanLogic(aDatabase);
+        }
 
-        //[TestMethod()]
-        //public void AddVanTest()
-        //{
-        //    Logic.VanLogic.addVan(van);
-        //    Entities.Van.Van recivedVan = ERP.Logic.VanLogic.getVan(van);
+        [TestMethod()]
+        public void AddVanTrueTest()
+        {
+            Assert.IsTrue(vanLogic.AddVan(van));
+        }
 
-        //    Assert.AreEqual(van, recivedVan);
-        //}
+        [TestMethod()]
+        public void AddVanFalseTest()
+        {
+            vanLogic.AddVan(van);
 
-        //[TestMethod()]
-        //public void AddVanRepeatedTest()
-        //{
-        //    Logic.VanLogic.addVan(van);
-        //    Logic.VanLogic.addVan(van);
-
-        //    List<Entities.Van.Van> vans = ERP.Logic.VanLogic.getAllVans();
-
-        //    Assert.AreEqual(vans.Count, 1);
-        //}
+            Assert.IsFalse(vanLogic.AddVan(van)); 
+        }
 
         //[TestMethod()]
         //public void DeleteVanTest()

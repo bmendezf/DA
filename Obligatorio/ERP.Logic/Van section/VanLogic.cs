@@ -3,11 +3,53 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ERP.Entities.Van;
 
 namespace ERP.Logic
 {
-    public class VanLogic
+    public class VanLogic : IVanLogic
     {
+        private Data.Data dataBase;
+
+        public VanLogic(Data.Data someDatabase)
+        {
+            this.dataBase = someDatabase;
+        }
+
+        public bool AddVan(Van aVan)
+        {
+            return dataBase.AddVan(aVan);
+        }
+
+        public bool DeleteVan(Van aVan)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Van> GetAllVans()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int getAmountOfVans()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Van GetVan(Van aVan)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int getVanCapacity(Van aVan)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool UpdateVan(Van aVan)
+        {
+            throw new NotImplementedException();
+        }
         //public static bool addVan(Entities.Van.Van aVan)
         //{
         //    if (ERP.Data.Data.vans.Contains(aVan))
