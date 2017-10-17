@@ -46,7 +46,18 @@ namespace ERP.Data
             set { _Vans = value; }
         }
 
-        public bool AddStudent(Student aStudent) { return false; }
+        public bool AddStudent(Student aStudent)
+        {
+            if (Students.Contains(aStudent))
+            {
+                return false;
+            }
+            else
+            {
+                Students.Add(aStudent);
+                return true;
+            }
+        }
 
         public bool DeleteStudent(Student aStudent) { return false; }
 

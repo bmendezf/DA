@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ERP.Entities.Student;
 
 namespace ERP.Logic
 {
-    public class StudentLogic
+    public class StudentLogic: IStudentLogic
     {
         private Data.Data dataBase;
 
@@ -14,15 +15,31 @@ namespace ERP.Logic
         {
             this.dataBase = someDatabase;
         }
-        //public bool addStudent(Entities.Student.Student aStudent)
-        //{
-        //    if (ERP.Data.Data.Students.Contains(aStudent))
-        //    {
-        //        return false;
-        //    }
-        //    ERP.Data.Data.Students.Add(aStudent);
-        //    return true;
-        //}
+
+        public bool AddStudent(Student aStudent)
+        {
+            return dataBase.AddStudent(aStudent);
+        }
+
+        public bool DeleteStudent(Student aStudent)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool GetAllStudents(Student aStudent)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Student getStudent(Student aStudent)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool UpdateStudent(Student aStudent)
+        {
+            throw new NotImplementedException();
+        }
 
         //public Entities.Student.Student getStudent(Entities.Student.Student aStudent)
         //{

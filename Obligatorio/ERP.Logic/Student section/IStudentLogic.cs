@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ERP.Entities.Student;
 
-namespace ERP.Logic.Student_section
+namespace ERP.Logic
 {
     interface IStudentLogic
     {
