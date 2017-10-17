@@ -105,9 +105,9 @@ namespace ERP.Test.Van
         public void getAmountTest()
         {
             ERP.Entities.Van.Van van2 = new ERP.Entities.Van.Van();
-            van2.LicensePlate = "a";
+            van2.LicensePlate = "aaa1234";
             ERP.Entities.Van.Van van3 = new ERP.Entities.Van.Van();
-            van3.LicensePlate = "B";
+            van3.LicensePlate = "Bbb1234";
 
             vanLogic.AddVan(van);
             vanLogic.AddVan(van2);

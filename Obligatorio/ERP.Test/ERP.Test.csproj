@@ -55,21 +55,19 @@
     <Compile Include="DataTests.cs" />
     <Compile Include="Student\StudentLogicTest.cs" />
     <Compile Include="Student\StudentTests.cs" />
-    <Compile Include="Student\StudentValidatorTest.cs" />
+    <Compile Include="Validators\Student\StudentValidatorTest.cs" />
     <Compile Include="Subject\SubjectLogicTests.cs" />
     <Compile Include="Subject\SubjectTests.cs" />
     <Compile Include="Teacher\TeacherLogicTests.cs" />
     <Compile Include="Teacher\TeacherTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validators\Subject\SubjectValidatorTests.cs" />
     <Compile Include="Van\VanLogicTests.cs" />
     <Compile Include="Van\VanTests.cs" />
-    <Compile Include="Van\vanValidatorTests.cs" />
+    <Compile Include="Validators\Van\vanValidatorTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Validators\Student\" />
-    <Folder Include="Validators\Subject\" />
     <Folder Include="Validators\Teacher\" />
-    <Folder Include="Validators\Van\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ERP.Data\ERP.Data.csproj">

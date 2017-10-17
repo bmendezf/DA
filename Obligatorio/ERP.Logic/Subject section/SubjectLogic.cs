@@ -21,57 +21,61 @@ namespace ERP.Logic
         }
         public bool AddSubject(Subject aSubject)
         {
-            //RUN VALIDATORS
-            return database.AddSubject(aSubject);
+            if (Entities.Validators.Subject.SubjectValidator.CodeValidator(aSubject.Code))
+            {
+                return database.AddSubject(aSubject);
+            }
+            else
+            {
+                return false;
+            }
+            
         }
 
         public bool DeleteSubject(Subject aSubject)
         {
-            //RUN VALIDATORS
             return database.DeleteSubject(aSubject);
         }
 
         public bool UpdateSubject(Subject aSubject)
         {
-            //RUN VALIDATORS
-            return database.UpdateSubject(aSubject); 
+            if (Entities.Validators.Subject.SubjectValidator.CodeValidator(aSubject.Code))
+            {
+                return database.UpdateSubject(aSubject);
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public Subject GetSubject(Subject aSubject)
         {
-            //RUN VALIDATORS
             return database.GetSubject(aSubject); 
         }
 
         public List<Subject> GetAllSubjects()
         {
-            //RUN VALIDATORS
             return database.GetAllSubjects();
         }
 
         public List<Student> GetStudentsBySubject(Subject aSubject)
         {
-            //RUN VALIDATORS
             return database.GetStudentsBySubject(aSubject);
         }
 
         public List<Teacher> GetTeachersBySubject(Subject aSubject)
         {
-            //RUN VALIDATORS
             return database.GetTeachersBySubject(aSubject);
         }
 
         public List<Subject> GetSubjectsByStudent(Student aStudent)
         {
-            //RUN VALIDATORS
             return database.GetSubjectsByStudent(aStudent);
         }
         public List<Subject> GetSubjectsByTeacher(Teacher aTeacher)
         {
-            //RUN VALIDATORS
             return database.GetSubjectsByTeacher(aTeacher);
         }
-
-
     }
 }
